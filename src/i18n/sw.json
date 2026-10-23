@@ -1,0 +1,13 @@
+{
+  "nav.topics": "Mada", "nav.revision": "Marudio", "nav.dashboard": "Maendeleo",
+  "home.title": "Jifunze Azure kupitia mambo unayoyajua tayari",
+  "home.sub": "Maelezo rahisi ya AZ-900 kwa mifano ya Kiafrika, maswali ya mazoezi, na marudio ya ulichokosea.",
+  "home.guest": "Endelea kama mgeni", "home.email": "Barua pepe", "home.send": "Tuma kiungo cha kuingia",
+  "home.sent": "Angalia barua pepe yako kwa kiungo cha kuingia.",
+  "topics.title": "Mada zako", "topics.start": "Anza", "status.not_started": "Haijaanza", "status.learning": "Unajifunza", "status.strong": "Imara",
+  "explain.quiz": "Nipime kwenye mada hii", "explain.simpler": "Eleza kwa urahisi zaidi", "explain.ask": "Uliza swali zaidi", "explain.send": "Uliza",
+  "quiz.check": "Hakiki jibu", "quiz.next": "Swali linalofuata", "quiz.finish": "Ona matokeo", "quiz.report": "Ripoti swali hili",
+  "rev.title": "Marudio ya leo", "rev.empty": "Hakuna cha kurudia sasa. Fanya jaribio na maswali uliyokosea yatarudi hapa.",
+  "dash.title": "Utayari wa mtihani", "dash.disclaimer": "Hii ni makadirio, si hakikisho.",
+  "footer.disclaimer": "Zana isiyo rasmi ya kujifunza. Haihusiani wala kuidhinishwa na Microsoft."
+}

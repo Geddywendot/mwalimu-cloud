@@ -1,0 +1,8 @@
+project_id = "mwalimu-cloud"
+
+[functions.explain]
+verify_jwt = true
+[functions.generate-quiz]
+verify_jwt = true
+[functions.followup]
+verify_jwt = true
