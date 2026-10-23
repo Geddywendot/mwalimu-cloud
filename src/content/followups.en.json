@@ -1,0 +1,332 @@
+{
+  "cloud-basics": [
+    {
+      "id": "cloud-basics-f01",
+      "question": "Who is responsible for securing customer data when using Microsoft 365 or Azure SaaS?",
+      "answer": "Under the shared responsibility model, the customer is always 100% responsible for their data, information, and user account access, even in SaaS solutions like Microsoft 365. Microsoft secures the physical datacenters, servers, operating systems, and application code, but you must safeguard your credentials and govern your files."
+    },
+    {
+      "id": "cloud-basics-f02",
+      "question": "Does Microsoft ever share responsibility for physical datacenter security with the customer in Azure?",
+      "answer": "No. In public cloud environments like Azure, physical datacenter facilities, perimeter fences, physical server hardware, power generators, and climate cooling systems are solely and exclusively managed by Microsoft."
+    },
+    {
+      "id": "cloud-basics-f03",
+      "question": "What is the primary difference in responsibility between IaaS and PaaS?",
+      "answer": "In IaaS (like Azure Virtual Machines), the customer is responsible for installing, configuring, patching, and updating the operating system and any runtime middleware. In PaaS (like Azure App Service), Microsoft handles all operating system maintenance, security patching, and runtime updates automatically."
+    },
+    {
+      "id": "cloud-basics-f04",
+      "question": "Why does endpoint device security always remain the customer's duty?",
+      "answer": "Microsoft has no physical or administrative control over the laptops, smartphones, or desktop computers your employees use to access Azure. Securing these endpoint devices with disk encryption, endpoint detection, and strong screen locks is strictly the customer's responsibility."
+    }
+  ],
+  "cloud-models": [
+    {
+      "id": "cloud-models-f01",
+      "question": "When should an enterprise choose a hybrid cloud deployment over a pure public cloud?",
+      "answer": "Hybrid cloud is ideal when an organization must comply with strict data sovereignty or banking regulations requiring financial ledgers to remain on physical on-premises servers, while still wanting to run customer-facing web apps on Azure for elastic scaling."
+    },
+    {
+      "id": "cloud-models-f02",
+      "question": "Is private cloud completely free from ongoing maintenance costs?",
+      "answer": "No. Private cloud requires significant ongoing capital and operational expenses: your organization must purchase the physical hardware, pay for datacenter cooling and electricity, replace broken disk drives, and employ on-site system administrators."
+    },
+    {
+      "id": "cloud-models-f03",
+      "question": "What is multi-tenancy in public cloud, and does it risk data leakage?",
+      "answer": "Multi-tenancy means multiple customers share the same physical server hardware. Azure prevents data leakage through hardened hypervisor virtualization, isolated memory boundaries, and cryptographic tenant separation, ensuring complete isolation."
+    },
+    {
+      "id": "cloud-models-f04",
+      "question": "Can an organization migrate from a private cloud to Azure gradually?",
+      "answer": "Yes. This is the hallmark of hybrid cloud. Organizations routinely connect their existing private VMware or Hyper-V environments to Azure using VPN or ExpressRoute, migrating applications workloads in phases."
+    }
+  ],
+  "cloud-pricing": [
+    {
+      "id": "cloud-pricing-f01",
+      "question": "How does CapEx differ from OpEx for tax and accounting purposes?",
+      "answer": "CapEx involves large upfront cash purchases of physical assets that depreciate over several years on balance sheets. OpEx involves ongoing service costs that are deducted on business income statements in the same tax year they are incurred."
+    },
+    {
+      "id": "cloud-pricing-f02",
+      "question": "If I stop a Virtual Machine in Azure, does all billing completely cease?",
+      "answer": "Compute billing stops when a VM is in the 'Deallocated' state, but you continue paying small charges for the attached managed storage disks and any reserved public static IP addresses, because Azure continues preserving that data for you."
+    },
+    {
+      "id": "cloud-pricing-f03",
+      "question": "What is the main benefit of consumption-based pricing for startups?",
+      "answer": "Startups can launch innovative digital products with zero upfront hardware expenditure, paying pennies per hour while user traffic is low, and scaling their cloud budget proportionally only as customer revenue grows."
+    },
+    {
+      "id": "cloud-pricing-f04",
+      "question": "Can Azure spending become unpredictable if not managed properly?",
+      "answer": "Yes. Because consumption pricing is elastic, unintended traffic surges or unmonitored test workloads can increase costs. This is why setting budget alerts in Azure Cost Management is essential."
+    }
+  ],
+  "cloud-benefits": [
+    {
+      "id": "cloud-benefits-f01",
+      "question": "What is the exact difference between scalability and elasticity?",
+      "answer": "Scalability is the architectural capacity of an application to grow its workload handling capability (up or out). Elasticity is the dynamic automation that triggers that scaling up or down automatically in real time based on fluctuating demand."
+    },
+    {
+      "id": "cloud-benefits-f02",
+      "question": "How does vertical scaling (scaling up) differ from horizontal scaling (scaling out)?",
+      "answer": "Vertical scaling (scaling up) adds more CPU, RAM, or faster disks to a single existing virtual machine. Horizontal scaling (scaling out) adds more identical virtual machine instances side by side in a pool to share traffic."
+    },
+    {
+      "id": "cloud-benefits-f03",
+      "question": "What does high availability mean for my service uptime SLA?",
+      "answer": "High availability ensures that through redundant components, clustering, and health monitoring, your service remains online with minimal disruption, typically backed by Azure Service Level Agreements (SLAs) ranging from 99.9% to 99.99% uptime."
+    },
+    {
+      "id": "cloud-benefits-f04",
+      "question": "How does cloud computing improve disaster recovery?",
+      "answer": "Instead of building and staffing a costly second physical datacenter, cloud disaster recovery allows you to replicate data and deploy backup workloads into distant paired geographic regions at a fraction of the cost."
+    }
+  ],
+  "cloud-service-types": [
+    {
+      "id": "cloud-service-types-f01",
+      "question": "When should my team choose IaaS instead of PaaS for an application?",
+      "answer": "Choose IaaS when your software requires custom operating system configurations, legacy Windows/Linux services, specific kernel drivers, or when migrating existing legacy on-premises servers with minimal code changes (lift-and-shift)."
+    },
+    {
+      "id": "cloud-service-types-f02",
+      "question": "What are the key developer advantages of using PaaS like Azure App Service?",
+      "answer": "PaaS allows developers to focus purely on writing application business logic. Microsoft manages server provisioning, operating system patching, runtime framework updates, hardware fault tolerance, and load balancing automatically."
+    },
+    {
+      "id": "cloud-service-types-f03",
+      "question": "Is Microsoft 365 classified as IaaS, PaaS, or SaaS?",
+      "answer": "Microsoft 365 (including Outlook, Teams, Word, and Excel online) is a prime example of Software as a Service (SaaS). End users consume the applications directly over the internet without managing any underlying infrastructure."
+    },
+    {
+      "id": "cloud-service-types-f04",
+      "question": "What makes serverless computing different from standard PaaS?",
+      "answer": "Serverless (like Azure Functions) executes code strictly in response to events or HTTP requests, scales instantly to zero when idle, and charges you only for the exact execution duration in milliseconds, with no ongoing hourly server fee."
+    }
+  ],
+  "arch-regions": [
+    {
+      "id": "arch-regions-f01",
+      "question": "How many datacenters are typically inside an Azure Availability Zone?",
+      "answer": "An Availability Zone consists of one or more physical datacenters equipped with independent power, cooling, and networking within an Azure region. They are physically separate from other zones in that region."
+    },
+    {
+      "id": "arch-regions-f02",
+      "question": "What is the purpose of an Azure Region Pair?",
+      "answer": "An Azure Region Pair links two regions in the same geography at least 300 miles apart. Azure coordinates platform updates across the pair so only one region is updated at a time, ensuring business continuity during regional crises."
+    },
+    {
+      "id": "arch-regions-f03",
+      "question": "Can I choose which Azure region to deploy my application resources in?",
+      "answer": "Yes. You choose regions based on data residency laws, compliance requirements, latency proximity to your end users, and the specific service availability in that region."
+    },
+    {
+      "id": "arch-regions-f04",
+      "question": "Do all Azure services support Availability Zones in every region?",
+      "answer": "No. While Microsoft is expanding zone support globally, certain specialized services or smaller regional datacenters do not support Availability Zones. You should check the Azure region documentation during architecture design."
+    }
+  ],
+  "arch-org": [
+    {
+      "id": "arch-org-f01",
+      "question": "Can an Azure resource belong to more than one Resource Group at the same time?",
+      "answer": "No. Every Azure resource must belong to exactly one Resource Group. However, you can move resources between Resource Groups if your organizational structure changes."
+    },
+    {
+      "id": "arch-org-f02",
+      "question": "Can a Resource Group contain resources located in different Azure regions?",
+      "answer": "Yes! A Resource Group is a logical management container. For example, a single Resource Group can contain a VM in South Africa North, a database in West Europe, and a storage account in East US."
+    },
+    {
+      "id": "arch-org-f03",
+      "question": "What happens to the resources inside a Resource Group if the group is deleted?",
+      "answer": "Deleting a Resource Group deletes every single resource contained inside it. This makes cleanup easy for temporary test environments, but requires strict caution in production systems."
+    },
+    {
+      "id": "arch-org-f04",
+      "question": "How do Management Groups help multi-subscription enterprise governance?",
+      "answer": "Management Groups allow administrators to organize hundreds of Azure subscriptions into a governance tree. Any Azure Policy or RBAC role assigned at the Management Group root level is inherited automatically by all subscriptions underneath."
+    }
+  ],
+  "arch-compute": [
+    {
+      "id": "arch-compute-f01",
+      "question": "What is the difference between Azure Container Instances (ACI) and Azure Kubernetes Service (AKS)?",
+      "answer": "ACI is a fast, serverless way to run a single container without managing any orchestrator or virtual machine. AKS is an enterprise container orchestration platform designed for complex multi-container microservice applications with automated scaling, ingress routing, and health checks."
+    },
+    {
+      "id": "arch-compute-f02",
+      "question": "How do Virtual Machine Scale Sets (VMSS) handle traffic increases?",
+      "answer": "VMSS automatically creates and deploys additional identical VM instances behind a load balancer when metric thresholds (such as CPU usage exceeding 75%) are met, and deletes excess VMs when demand drops."
+    },
+    {
+      "id": "arch-compute-f03",
+      "question": "Can I run both Windows and Linux virtual machines in Azure?",
+      "answer": "Yes. Azure offers full native support for multiple operating systems including Windows Server, Ubuntu, Red Hat, Debian, SUSE, and custom enterprise Linux distributions."
+    },
+    {
+      "id": "arch-compute-f04",
+      "question": "What business problem does Azure Virtual Desktop (AVD) solve?",
+      "answer": "AVD delivers virtualized Windows desktops and applications to remote employees securely over the internet, allowing staff to work from any laptop while company data remains secure inside the Azure cloud."
+    }
+  ],
+  "arch-network": [
+    {
+      "id": "arch-network-f01",
+      "question": "Does Virtual Network (VNet) Peering send traffic over the public internet?",
+      "answer": "No. VNet Peering routes network traffic directly across Microsoft's high-speed private global fiber backbone. Traffic never touches the public internet, ensuring high bandwidth and low latency."
+    },
+    {
+      "id": "arch-network-f02",
+      "question": "When should an enterprise choose ExpressRoute instead of a Site-to-Site VPN?",
+      "answer": "Choose ExpressRoute when your organization requires dedicated, high-speed private connectivity (up to 100 Gbps) with guaranteed low latency and predictable performance, completely bypassing the unpredictable public internet."
+    },
+    {
+      "id": "arch-network-f03",
+      "question": "What is the purpose of an Azure Network Security Group (NSG)?",
+      "answer": "An NSG acts as a virtual firewall that filters inbound and outbound network traffic to Azure resources in a virtual network subnet or network interface, using priority-ranked security rules based on IP address, port, and protocol."
+    },
+    {
+      "id": "arch-network-f04",
+      "question": "How does an Azure Private Endpoint improve security for Azure SQL Database?",
+      "answer": "A Private Endpoint assigns a private IP address from your Virtual Network to the Azure SQL Database. This allows your app to access the database privately without exposing a public internet IP address."
+    }
+  ],
+  "arch-storage": [
+    {
+      "id": "arch-storage-f01",
+      "question": "What are the four access tiers in Azure Blob Storage and how do they differ?",
+      "answer": "Hot is for frequently accessed data with highest storage cost but lowest access cost. Cool is for data accessed infrequently (stored >= 30 days). Cold is for rarely accessed data (stored >= 90 days). Archive is for long-term offline retention (stored >= 180 days) with lowest storage cost but hours of rehydration latency."
+    },
+    {
+      "id": "arch-storage-f02",
+      "question": "What is the difference between Locally Redundant Storage (LRS) and Zone-Redundant Storage (ZRS)?",
+      "answer": "LRS keeps three synchronous copies of your data inside a single physical datacenter. ZRS copies your data synchronously across three separate Availability Zones within the primary region, surviving a full datacenter failure."
+    },
+    {
+      "id": "arch-storage-f03",
+      "question": "Can I mount an Azure Files share to an on-premises Windows or Mac computer?",
+      "answer": "Yes. Azure Files supports the industry-standard Server Message Block (SMB) protocol over port 445, allowing on-premises computers and Azure virtual machines to mount and share the exact same cloud drive simultaneously."
+    },
+    {
+      "id": "arch-storage-f04",
+      "question": "What does Geo-Redundant Storage (GRS) provide during a regional catastrophe?",
+      "answer": "GRS replicates your data three times in the primary region using LRS, and then asynchronously replicates another three copies to a secondary paired region hundreds of miles away, protecting against complete regional destruction."
+    }
+  ],
+  "arch-identity": [
+    {
+      "id": "arch-identity-f01",
+      "question": "What is the core difference between authentication and authorization?",
+      "answer": "Authentication (AuthN) proves who you are by validating credentials (such as username, password, or biometric face scan). Authorization (AuthZ) verifies what permissions or access rights you have to perform specific actions on resources."
+    },
+    {
+      "id": "arch-identity-f02",
+      "question": "What are the three core principles of the Zero Trust security model?",
+      "answer": "1. Verify explicitly: always authenticate and authorize based on all available data points. 2. Use least privilege: limit user access with just-in-time and just-enough-access (JIT/JEA). 3. Assume breach: segment networks and encrypt end-to-end."
+    },
+    {
+      "id": "arch-identity-f03",
+      "question": "How does Conditional Access protect enterprise systems from unauthorized logins?",
+      "answer": "Conditional Access acts as an intelligent policy engine that evaluates identity signals (such as user group, geographic location, IP address risk, and device compliance) and enforces decisions like requiring MFA or blocking the sign-in."
+    },
+    {
+      "id": "arch-identity-f04",
+      "question": "What are the three factors used in Multi-Factor Authentication (MFA)?",
+      "answer": "MFA requires verification from at least two different categories: 1. Something you know (a password or PIN), 2. Something you have (a smartphone app, SMS code, or hardware token), and 3. Something you are (biometrics like a fingerprint or face scan)."
+    }
+  ],
+  "gov-cost": [
+    {
+      "id": "gov-cost-f01",
+      "question": "What is the difference between the Azure Pricing Calculator and the TCO Calculator?",
+      "answer": "The Azure Pricing Calculator estimates future monthly Azure deployment costs for specific configurations. The Total Cost of Ownership (TCO) Calculator compares the total cost of running an on-premises datacenter (hardware, electricity, cooling, staff) against migrating to Azure."
+    },
+    {
+      "id": "gov-cost-f02",
+      "question": "Do Resource Tags inherit their key-value pairs to child resources automatically?",
+      "answer": "No. Tags applied to a Resource Group are not inherited automatically by the resources inside that group. To enforce tag propagation, organizations use Azure Policy."
+    },
+    {
+      "id": "gov-cost-f03",
+      "question": "Is inbound network traffic into Azure datacenters charged?",
+      "answer": "No. Inbound data transfers (ingress) into Azure datacenters from the internet or on-premises are completely free. Outbound data transfers (egress) leaving Azure datacenters are billed based on bandwidth volume."
+    },
+    {
+      "id": "gov-cost-f04",
+      "question": "How can an organization use Azure Reservations to save money?",
+      "answer": "Azure Reservations allow companies to commit to one-year or three-year plans for predictable compute workloads (like VMs or SQL databases) in exchange for significant discounts (up to 72%) compared to pay-as-you-go rates."
+    }
+  ],
+  "gov-governance": [
+    {
+      "id": "gov-governance-f01",
+      "question": "What happens if a user with Owner role tries to delete a resource protected by a CanNotDelete lock?",
+      "answer": "The deletion will fail. Resource Locks override all Role-Based Access Control (RBAC) permissions. Even a subscription Owner cannot delete the resource until an authorized administrator explicitly removes the lock first."
+    },
+    {
+      "id": "gov-governance-f02",
+      "question": "How does Azure Policy differ from Role-Based Access Control (RBAC)?",
+      "answer": "RBAC controls WHO has permission to perform actions (focusing on user identities and roles). Azure Policy controls WHAT properties and configurations resources are allowed to have (focusing on resource compliance, allowed regions, and SKUs)."
+    },
+    {
+      "id": "gov-governance-f03",
+      "question": "What is the purpose of Microsoft Purview in cloud governance?",
+      "answer": "Microsoft Purview provides unified data governance across cloud and on-premises environments, offering automated data discovery, sensitive data classification, data lineage mapping, and compliance risk auditing."
+    },
+    {
+      "id": "gov-governance-f04",
+      "question": "Where can compliance officers download official ISO and SOC audit reports for Azure?",
+      "answer": "Compliance officers can access and download official third-party security audit reports, ISO/IEC certifications, SOC 1/2/3 reports, and regulatory compliance whitepapers directly from the Service Trust Portal."
+    }
+  ],
+  "gov-tools": [
+    {
+      "id": "gov-tools-f01",
+      "question": "What is Azure Cloud Shell and what software must I install to run it?",
+      "answer": "Azure Cloud Shell is an authenticated, browser-accessible command-line terminal hosted in Azure. You do not need to install any software on your local machine; it runs in any modern browser with pre-installed tools like Azure CLI, PowerShell, and git."
+    },
+    {
+      "id": "gov-tools-f02",
+      "question": "What is the advantage of Azure Bicep over traditional JSON ARM templates?",
+      "answer": "Azure Bicep is a domain-specific language that provides cleaner syntax, better modularity, and automatic dependency management, making Infrastructure as Code much easier to author and maintain than verbose JSON ARM templates."
+    },
+    {
+      "id": "gov-tools-f03",
+      "question": "What does Azure Arc do for servers located in an on-premises datacenter?",
+      "answer": "Azure Arc connects on-premises physical servers, virtual machines, and Kubernetes clusters to Azure Resource Manager, allowing you to manage, monitor, and apply Azure Policy to non-Azure resources from a single console."
+    },
+    {
+      "id": "gov-tools-f04",
+      "question": "What is the difference between imperative and declarative deployment tools?",
+      "answer": "Imperative tools (like PowerShell or Azure CLI scripts) execute step-by-step commands instructing the system HOW to create resources. Declarative tools (like ARM templates and Bicep) specify WHAT final state should exist without writing procedural code."
+    }
+  ],
+  "gov-monitor": [
+    {
+      "id": "gov-monitor-f01",
+      "question": "What are the five recommendation pillars analyzed by Azure Advisor?",
+      "answer": "Azure Advisor evaluates your resources across five architectural pillars: 1. Cost (identifying idle resources), 2. Security (integrating with Defender for Cloud), 3. Reliability (improving high availability), 4. Performance (optimizing speeds), and 5. Operational Excellence."
+    },
+    {
+      "id": "gov-monitor-f02",
+      "question": "How does Azure Service Health differ from the public Azure Status page?",
+      "answer": "The public Azure Status page shows global outages affecting all services worldwide. Azure Service Health provides a personalized, customized dashboard notifying you strictly about incidents, planned maintenance, and health advisories affecting the specific services and regions your subscription uses."
+    },
+    {
+      "id": "gov-monitor-f03",
+      "question": "What query language is used to analyze diagnostic logs in Azure Log Analytics?",
+      "answer": "Azure Log Analytics uses Kusto Query Language (KQL), a powerful and expressive query language designed specifically to search, filter, and visualize massive volumes of structured telemetry log data rapidly."
+    },
+    {
+      "id": "gov-monitor-f04",
+      "question": "What types of metrics does Application Insights collect from web applications?",
+      "answer": "Application Insights collects live application performance telemetry including HTTP request rates, response times, failure rates, unhandled code exceptions, AJAX call latencies, and user session tracking."
+    }
+  ]
+}

@@ -1,0 +1,468 @@
+{
+  "_review": "Needs native-speaker review",
+  "cloud-basics": {
+    "standard": {
+      "topic": "cloud-basics",
+      "language": "sw",
+      "simple_explanation": "Cloud computing hutoa huduma za kompyuta kama vile seva, uhifadhi, hifadhidata, na mitandao kupitia mtandao wa intaneti kwa mtindo wa kulipia kile unachotumia tu. Chini ya Shared Responsibility Model, majukumu ya usalama yanagawanywa kati yako na Microsoft. Microsoft inasimamia miundombinu ya kimwili, umeme, na usalama wa vituo vya data. Wewe unawajibika kila wakati kwa data yako, vitambulisho vya watumiaji, na vifaa. Majukumu ya mifumo ya uendeshaji (OS) na mitandao yanabadilika kulingana na iwapo unachagua IaaS, PaaS, au SaaS.",
+      "official_definition": "Cloud computing ni utoaji wa huduma za kompyuta kupitia mtandao wa intaneti ili kuwezesha ubunifu wa haraka, rasilimali zinazobadilika, na uchumi wa kiwango. Shared Responsibility Model hubainisha majukumu ya kiusalama yanayosimamiwa na mtoa huduma na yale ya mteja.",
+      "african_analogy": "Fikiria kupanga nyumba katika ploti au jengo la ghorofa. Mwenye nyumba anahakikisha kuta, paa, geti kuu la ulinzi, na mabomba ya maji viko imara. Wewe mpangaji unawajibika kufunga kufuli ya mlango wako, kuchagua nani anaingia sebuleni, na kulinda vitu vyako vya thamani.",
+      "analogy_limits": "Mahali inapokoma: Kwenye cloud unaweza kubadilisha usanidi wa mtandao na kuta za kiusalama kwa mibofyo michache ya kipanya, wakati kwenye nyumba huwezi kubomoa kuta za nje kwa urahisi.",
+      "key_terms": [
+        { "term": "Shared Responsibility Model", "meaning": "Mwongozo unaogawa wajibu wa usalama na uendeshaji kati ya Microsoft na mteja." },
+        { "term": "Customer Data", "meaning": "Data na taarifa za mteja, ambazo ni wajibu wa mteja kwa asilimia 100 katika huduma zote za cloud." },
+        { "term": "Physical Datacenter", "meaning": "Majengo ya kimwili na seva ambazo Microsoft inalinda kila wakati." }
+      ],
+      "exam_tip": "Kumbuka kuwa usalama wa data na akaunti za watumiaji daima unabaki kuwa wajibu wa mteja, bila kujali aina ya huduma ya cloud.",
+      "common_mistake": "Kudhani kuwa kuhamia kwenye cloud kunamaanisha Microsoft inalinda data zako na manenosiri yako kiotomatiki bila wewe kuchukua hatua yoyote."
+    },
+    "simpler": {
+      "topic": "cloud-basics",
+      "language": "sw",
+      "simple_explanation": "Badala ya kununua seva ghali za kompyuta na kuziweka ofisini, unakodi uwezo wa kompyuta kutoka kwa Microsoft kupitia intaneti. Kazi imegawanywa: Microsoft inatunza jengo, umeme, na mashine za chuma. Wewe unalinda mafaili yako, manenosiri, na watumiaji wako.",
+      "official_definition": "Muundo unaowezesha ufikiaji wa rasilimali za kompyuta zilizoshirikiwa kupitia mtandao, huku majukumu yakigawanywa rasmi.",
+      "african_analogy": "Ni kama kukodi matatu kwa safari ya kikundi. Dereva ananunua mafuta, anafanya matengenezo ya gari na kuliendesha barabarani. Walimu au wasafiri wanawajibika kwa usalama wa watoto na mizigo waliyoibeba ndani ya basi.",
+      "analogy_limits": "Mahali inapokoma: Safari ya matatu ni ya muda mfupi, wakati mifumo ya cloud inaweza kuendeshwa mfululizo kwa miaka mingi na kupanuka ulimwenguni kote mara moja.",
+      "key_terms": [
+        { "term": "Cloud Provider", "meaning": "Kampuni kubwa (kama Microsoft) inayomiliki na kuendesha maunzi ya kompyuta." },
+        { "term": "Customer Responsibility", "meaning": "Data, mipangilio na watumiaji ambao lazima uwalinde wewe mwenyewe." }
+      ],
+      "exam_tip": "Swali likiuliza nani anayelinda data ya mteja katika huduma za SaaS, jibu daima ni mteja.",
+      "common_mistake": "Kufikiri kwamba Microsoft itarejesha mafaili uliyoyafuta kimakosa usipoweka nakala rudufu (backup)."
+    }
+  },
+  "cloud-models": {
+    "standard": {
+      "topic": "cloud-models",
+      "language": "sw",
+      "simple_explanation": "Kuna miundo mitatu mikuu ya kupeleka huduma za cloud: public cloud, private cloud, na hybrid cloud. Public cloud inamilikiwa na kuendeshwa na mtoa huduma kama Microsoft, ikishiriki miundombinu ya kimwili kwa usalama miongoni mwa mashirika mengi kupitia mtandao wa umma. Private cloud inatengwa mahususi kwa shirika moja pekee, iwe ofisini kwao au kwa mshirika. Hybrid cloud inaunganisha mazingira ya public na private, ikiwezesha programu na data kugawanywa kwa usalama kulingana na sheria au mahitaji ya kiutendaji.",
+      "official_definition": "Miundo ya utekelezaji wa cloud inayofafanua jinsi miundombinu inavyotolewa: public cloud hutoa rasilimali zinazoshirikiwa; private cloud hutenga miundombinu kwa shirika moja; hybrid cloud huunganisha mifumo yote miwili.",
+      "african_analogy": "Public cloud ni kama usafiri wa umma (basi la BRT au matatu) ambapo kila mtu anasafiri kwa gharama nafuu. Private cloud ni kumiliki gari lako binafsi la familia lililoegeshwa kwenye boma lako. Hybrid cloud ni kutumia gari lako kwa shughuli za kawaida za nyumbani lakini kukodi treni kusafirisha mizigo mizito ya shamba.",
+      "analogy_limits": "Mahali inapokoma: Katika public cloud mifumo inatengwa kwa vizuizi thabiti vya kidijitali vilivyolindwa sana, wakati kwenye matatu abiria wanakaa pamoja kimwili.",
+      "key_terms": [
+        { "term": "Public Cloud", "meaning": "Miundombinu inayomilikiwa na mtoa huduma kama Azure na kushirikiwa na wateja wengi." },
+        { "term": "Private Cloud", "meaning": "Miundombinu inayotumiwa na shirika moja pekee yenye udhibiti kamili wa maunzi." },
+        { "term": "Hybrid Cloud", "meaning": "Mazingira yaliyounganishwa yanayounganisha kompyuta za ndani (on-premises) na public cloud." }
+      ],
+      "exam_tip": "Hybrid cloud ni chaguo bora iwapo kampuni inahitaji kutunza data nyeti ya fedha ofisini kwa kufuata sheria huku ikitumia public cloud kwa tovuti ya wateja.",
+      "common_mistake": "Kudhani kuwa private cloud daima ina usalama zaidi; watoa huduma wa public cloud huwekeza mabilioni ya dola kwenye usalama wa hali ya juu."
+    },
+    "simpler": {
+      "topic": "cloud-models",
+      "language": "sw",
+      "simple_explanation": "Public cloud inamaanisha kukodi nafasi kwenye seva kubwa za Microsoft zinazoshirikiwa. Private cloud inamaanisha kujenga chumba chako cha seva ofisini kwa ajili ya kampuni yako tu. Hybrid cloud inaunganisha zote mbili, ili taarifa zako za siri zibaki nyumbani huku tovuti yako kubwa ikikimbizwa kwenye cloud.",
+      "official_definition": "Uainishaji wa mifumo ya cloud katika mifumo ya umma, ya faragha, au mseto.",
+      "african_analogy": "Public cloud ni ununuzi katika soko kuu la wazi. Private cloud ni kulima mboga kwenye bustani yako ya nyuma ya nyumba. Hybrid ni kula mboga za bustani yako huku ukinunua viungo sokoni.",
+      "analogy_limits": "Mahali inapokoma: Vyakula sokoni haviwezi kuunganishwa moja kwa moja kidijitali kama mifumo ya kompyuta inayotumia njia zilizosimbwa.",
+      "key_terms": [
+        { "term": "Multi-tenancy", "meaning": "Wateja wengi huru wanaotumia seva moja ya kimwili kwa usalama uliotenganishwa." },
+        { "term": "On-premises", "meaning": "Seva zilizowekwa moja kwa moja ndani ya jengo au ofisi ya kampuni yako." }
+      ],
+      "exam_tip": "Ukiona maneno 'hakuna gharama za awali za ununuzi', chagua public cloud; 'udhibiti kamili wa maunzi', chagua private cloud.",
+      "common_mistake": "Kuchanganya multi-cloud (kutumia Azure na AWS kwa pamoja) na hybrid cloud (kuunganisha mifumo ya ndani ya ofisi na cloud)."
+    }
+  },
+  "cloud-pricing": {
+    "standard": {
+      "topic": "cloud-pricing",
+      "language": "sw",
+      "simple_explanation": "Cloud computing inabadilisha gharama za uwekezaji wa awali wa mtaji (CapEx) kuwa gharama za uendeshaji wa kawaida (OpEx). Chini ya mtindo wa malipo kulingana na matumizi (consumption-based model), unalipia tu uwezo wa kompyuta, hifadhi, na mtandao unaotumia halisi, bila kulipia gharama za ununuzi wa maunzi kabla. Ukizima seva au ukifuta chombo cha hifadhi, malipo ya uendeshaji yanasimama mara moja. Hii inaruhusu biashara kupima gharama kwa urahisi na kurekebisha bajeti bila hasara ya mitambo isiyotumika.",
+      "official_definition": "Mfumo wa kutoza bili ambapo wateja wanalipia tu rasilimali wanazozitumia wakati wa mzunguko wa bili, ikibadilisha gharama za mtaji (CapEx) kuwa gharama za uendeshaji (OpEx).",
+      "african_analogy": "Fikiria kununua tokeni za umeme za malipo ya kabla (kama KPLC au Yaka) au vocha ya muda wa maongezi ya simu. Hununui nguzo za umeme wala mtambo wa kufua umeme; unaweka nambari ya tokeni na unalipia tu uniti za umeme ambazo friji na taa zako zinatumia.",
+      "analogy_limits": "Mahali inapokoma: Tokeni ya umeme inanunuliwa kabla ya kutumia, wakati Azure inapima sekunde za kompyuta unazotumia na kutoa bili mwishoni mwa mwezi kulingana na matumizi halisi.",
+      "key_terms": [
+        { "term": "CapEx (Capital Expenditure)", "meaning": "Pesa inayotumiwa kununua mashine za kimwili, seva, na majengo ya vituo vya data." },
+        { "term": "OpEx (Operational Expenditure)", "meaning": "Gharama za kila siku za uendeshaji wa huduma, zinazolipwa unapoendelea kuzitumia." },
+        { "term": "Consumption-based Model", "meaning": "Mfumo wa bei ambapo unalipa tu kulingana na kiasi na muda wa rasilimali zilizotumika." }
+      ],
+      "exam_tip": "CapEx inahitaji pesa nyingi mapema na thamani yake hupungua (depreciation) kwa miaka. OpEx haina gharama za awali na inaweza kupunguzwa kwenye kodi kama gharama ya uendeshaji.",
+      "common_mistake": "Kusahau mashine za majaribio (test VMs) zikiwa zimewashwa usiku na mchana na kushangazwa na bili kubwa ya OpEx mwishoni mwa mwezi."
+    },
+    "simpler": {
+      "topic": "cloud-pricing",
+      "language": "sw",
+      "simple_explanation": "Badala ya kulipa mamilioni ya pesa mwanzo kununua kompyuta kubwa, unalipa bili ndogo kila mwezi kwa muda na nafasi unayotumia pekee. Unapozima seva, kaunta ya gharama inasimama papo hapo.",
+      "official_definition": "Muundo wa malipo ya matumizi unaobadilisha matumizi ya teknolojia kutoka uwekezaji mkubwa wa mtaji hadi gharama za kawaida.",
+      "african_analogy": "Ni kama kulipia maji kwenye bomba la kijiji kwa ndoo au sarafu badala ya kukodi mashine nzito ya kuchimba kisima kirefu kwenye kiwanja chako.",
+      "analogy_limits": "Mahali inapokoma: Mabomba ya maji yana ada ndogo za usafi, wakati baadhi ya huduma za serverless kwenye Azure hazitozi senti hata moja ikiwa hazijatumika.",
+      "key_terms": [
+        { "term": "Pay-as-you-go", "meaning": "Kulipia tu muda na uwezo halisi wa kompyuta unaotumiwa na programu zako." },
+        { "term": "Depreciation", "meaning": "Kupungua kwa thamani ya mashine za kimwili kadri siku zinavyosonga, jambo linaloepukika kwenye cloud." }
+      ],
+      "exam_tip": "Cloud ni sawa na OpEx na bei ya matumizi. Vyumba vya seva vya ofisini ni sawa na CapEx.",
+      "common_mistake": "Kudhani kuwa lazima usaini mkataba wa miaka mitano kuanza kutumia Azure; unaweza kuunda na kufuta rasilimali ndani ya dakika tano."
+    }
+  },
+  "cloud-benefits": {
+    "standard": {
+      "topic": "cloud-benefits",
+      "language": "sw",
+      "simple_explanation": "Cloud computing inatoa faida kuu saba za kusanifu mifumo: High Availability inayoweka huduma zikiendelea kufanya kazi hata hitilafu za maunzi zikitokea; Scalability inayokuwezesha kuongeza au kupunguza rasilimali; Elasticity inayoongeza au kupunguza uwezo kiotomatiki kulingana na mabadiliko ya wateja papo hapo; Reliability inayohakikisha utendaji thabiti baada ya majanga; Predictability inayohakikisha ubora na makadirio wazi ya gharama; Security inayolindwa na wataalamu wa kimataifa; na Governance inayolazimisha viwango vya usimamizi.",
+      "official_definition": "Manufaa ya kimsingi yanayotolewa na majukwaa makubwa ya cloud, ikiwa ni pamoja na high availability, scalability, elasticity, reliability, na automated governance.",
+      "african_analogy": "Chama cha ushirika cha akiba na mikopo (SACCO) chenye mafanikio. Wanachama wanapoweka michango pamoja, yeyote anaweza kupata mkopo wakati wa dharura. Ushirika unapanuka wakati wa msimu wa mavuno na kubana matumizi wakati wa ukame, ukifuata sheria kali za katiba.",
+      "analogy_limits": "Mahali inapokoma: Maamuzi ya SACCO yanahitaji mikutano na kura za wajumbe, wakati elasticity kwenye cloud hufanya maamuzi ya kuongeza seva kiotomatiki ndani ya sekunde chache.",
+      "key_terms": [
+        { "term": "High Availability", "meaning": "Uwezo wa mfumo kuendelea kupatikana na kufanya kazi hata vipengele fulani vikipata hitilafu." },
+        { "term": "Elasticity", "meaning": "Uwezo wa kuongeza au kupunguza rasilimali kiotomatiki mara moja kulingana na ongezeko la watumiaji." },
+        { "term": "Scalability", "meaning": "Uwezo wa mfumo kuhimili ongezeko la mzigo wa kazi kwa kuongeza ukubwa au wingi wa rasilimali." }
+      ],
+      "exam_tip": "Tofautisha scalability na elasticity: scalability ni uwezo wa kukua; elasticity ni mchakato wa kuongezeka na kupungua kiotomatiki kulingana na wimbi la wageni.",
+      "common_mistake": "Kuchanganya vertical scaling (kuongeza CPU/RAM kwenye seva moja) na horizontal scaling (kuongeza idadi ya seva zinazofanya kazi sambamba)."
+    },
+    "simpler": {
+      "topic": "cloud-benefits",
+      "language": "sw",
+      "simple_explanation": "Cloud inapa programu zako nguvu kubwa: hazizimi kirahisi (high availability), zinaweza kukua kwa sekunde (scalability), zinajipunguza kiotomatiki wateja wanapolala ili kuokoa pesa zako (elasticity), na zinafuata miongozo uliyoiweka (governance).",
+      "official_definition": "Uwezo wa uendeshaji wa miundombinu ya cloud kutoa huduma thabiti, zinazoweza kukua na kutimiza masharti ya kisheria.",
+      "african_analogy": "Fikiria mtandao wa fedha kwa njia ya simu usiku wa mkesha wa Mwaka Mpya. Mamilioni ya watu wanatuma pesa kwa wakati mmoja. Mtandao unahimili msongamano bila kuzimia, kisha unatulia Januari 2.",
+      "analogy_limits": "Mahali inapokoma: Mitandao ya simu mara nyingine hulemewa na minara ya mawasiliano, wakati vituo vya kisasa vya data vya cloud vina mawasiliano mapana ya nyuzi za kioo (fiber optic).",
+      "key_terms": [
+        { "term": "Fault Tolerance", "meaning": "Kuendelea kufanya kazi bila kukatika hata kifaa kimoja cha ndani kikiharibika." },
+        { "term": "Scale Out", "meaning": "Kuongeza seva zaidi zinazofanana kando kando ili kugawana mzigo wa kazi wa tovuti." }
+      ],
+      "exam_tip": "Swali likiuliza kuhusu kushughulikia wimbi kubwa la wateja wa msimu wa sikukuu kiotomatiki na kupunguza matumizi baadaye, chagua elasticity.",
+      "common_mistake": "Kudhani high availability inamaanisha kutozimika kwa asilimia 100.0 kila sekunde; mikataba ya SLA hutoa hakikisho la kati ya 99.9% hadi 99.99%."
+    }
+  },
+  "cloud-service-types": {
+    "standard": {
+      "topic": "cloud-service-types",
+      "language": "sw",
+      "simple_explanation": "Huduma za cloud zinagawanywa katika viwango vitatu: IaaS, PaaS, na SaaS, pamoja na serverless. Infrastructure as a Service (IaaS) inakupa udhibiti mkubwa: unakodi mashine pepe (VMs) na mitandao huku ukisimamia mfumo endeshi (OS) na programu. Platform as a Service (PaaS) huondoa usimamizi wa OS: unaweka tu msimbo wako (code) huku Azure ikisimamia usasishaji, uendeshaji na upanuzi. Software as a Service (SaaS) hutoa programu kamili ya mtumiaji kama Microsoft 365 ambapo unasimamia data na akaunti pekee. Serverless huendesha msimbo unapochochewa na matukio.",
+      "official_definition": "Uainishaji wa huduma za cloud kulingana na kiwango cha usimamizi: IaaS hutoa maunzi pepe; PaaS hutoa mazingira ya kutengeneza mifumo; SaaS hutoa programu kamili; serverless huendesha msimbo bila usimamizi wa seva.",
+      "african_analogy": "Fikiria kuhusu kupata chakula. IaaS ni kukodi jiko lililo na vyombo ambapo unanunua viungo, unapika, na kuosha vyombo. PaaS ni kuagiza chakula kutoka kwa huduma ya upishi (catering) ambapo wanapika na kupakua, lakini unachagua aina ya chakula. SaaS ni kwenda kula hotelini ambapo kila kitu kinaandaliwa na kusafishwa kwa ajili yako.",
+      "analogy_limits": "Mahali inapokoma: Kwenye hoteli huwezi kubadilisha mapishi ya mpishi, lakini kwenye programu za SaaS mara nyingi unaweza kubadilisha usanidi, mtiririko wa kazi na sheria za kiusalama.",
+      "key_terms": [
+        { "term": "IaaS (Infrastructure as a Service)", "meaning": "Unakodi mashine pepe za kompyuta; unasanidi na kusasisha mfumo endeshi na programu." },
+        { "term": "PaaS (Platform as a Service)", "meaning": "Mtoa huduma anasimamia maunzi na mifumo endeshi; wewe unapeleka tu msimbo wa programu yako." },
+        { "term": "SaaS (Software as a Service)", "meaning": "Programu kamili inayotolewa mtandaoni na kusimamiwa na msambazaji, ikitumiwa moja kwa moja na wateja." }
+      ],
+      "exam_tip": "Azure Virtual Machines ni IaaS. Azure App Service ni PaaS. Microsoft 365 ni SaaS. Azure Functions ni serverless.",
+      "common_mistake": "Kudhani kuwa ni lazima usasishe OS kwenye Azure App Service au Azure SQL Database; kwenye PaaS, Microsoft inasasisha OS kiotomatiki."
+    },
+    "simpler": {
+      "topic": "cloud-service-types",
+      "language": "sw",
+      "simple_explanation": "IaaS ni kukodi kompyuta tupu mtandaoni ambapo unaweka Windows na programu zako. PaaS ni kumpa Microsoft msimbo wako wa wavuti na yeye anaiendesha bila wewe kuwaza kuhusu kusasisha Windows. SaaS ni kutumia programu iliyokamilika kama barua pepe moja kwa moja kwenye kivinjari chako cha intaneti.",
+      "official_definition": "Muundo unaobainisha majukumu ya usanidi ya mteja kulinganisha na majukumu ya usimamizi ya mtoa huduma.",
+      "african_analogy": "IaaS ni kununua mawe na saruji kujenga nyumba mwenyewe. PaaS ni kuhamia kwenye nyumba iliyojengwa tayari yenye fanicha. SaaS ni kulala chumba cha hoteli chenye huduma kamili.",
+      "analogy_limits": "Mahali inapokoma: Unaweza kubadili au kuchanganya IaaS na PaaS kwenye akaunti moja ya Azure, wakati vyumba vya hoteli na viwanja haviwezi kuunganishwa kiholela.",
+      "key_terms": [
+        { "term": "Serverless", "meaning": "Kuendesha msimbo unapohitajika bila kulipia au kusimamia seva wakati hakuna kazi." },
+        { "term": "Middleware", "meaning": "Programu inayounganisha mfumo endeshi na maombi ya watumiaji, inayosimamiwa na Microsoft kwenye PaaS." }
+      ],
+      "exam_tip": "Mahitaji yakitaja 'kuhamisha seva zilizopo ofisini kwa mabadiliko machache iwezekanavyo' (lift-and-shift), chagua IaaS.",
+      "common_mistake": "Kudhani kuwa serverless inamaanisha hakuna seva za kimwili kabisa; zipo, ila Microsoft anazisimamia zote kwa siri."
+    }
+  },
+  "arch-regions": {
+    "standard": {
+      "topic": "arch-regions",
+      "language": "sw",
+      "simple_explanation": "Miundombinu ya kimwili ya Azure imeundwa kwa Regions, Availability Zones, na Region Pairs. Azure Region ni eneo la kijiografia lenye kituo cha data kimoja au zaidi vilivyounganishwa kwa mtandao wa kasi ya juu sana. Availability Zones ni vituo vya data vilivyotenganishwa kimwili ndani ya eneo moja, kila kimoja kikiwa na umeme, mfumo wa kupoeza, na mtandao huru ili kulinda dhidi ya majanga ya ndani. Kila eneo limeunganishwa na Region Pair lililo umbali wa angalau maili 300 ndani ya nchi au bara moja kwa ajili ya kufufua mifumo baada ya majanga makubwa.",
+      "official_definition": "Maeneo ya kijiografia ya Azure yanayojumuisha vituo vya data vilivyowekwa ndani ya mpaka wa kasi ya chini ya mawasiliano; Availability Zones hutoa vituo huru vya data; Region Pairs huwezesha ustahimilivu wa kijiografia.",
+      "african_analogy": "Availability Zones ni kama kuwa na matawi matatu tofauti ya wakala wa M-Pesa mjini: Westlands, Posta ya Kati, na Kilimani. Umeme ukikatika Westlands, matawi mengine mawili yanaendelea kuhudumia wateja. Region Pair ni kuwa na ofisi kuu Nairobi na ofisi ya chelezo Mombasa.",
+      "analogy_limits": "Mahali inapokoma: Kusafiri kati ya Nairobi na Mombasa huchukua masaa mengi kwa treni, wakati Region Pairs za Azure zinasafirisha data kwa mikondo ya fiber optic kwa kasi ya mwanga.",
+      "key_terms": [
+        { "term": "Azure Region", "meaning": "Eneo la kijiografia lenye vituo vya data vilivyounganishwa kwa mtandao wa mawasiliano ya haraka." },
+        { "term": "Availability Zone (AZ)", "meaning": "Vituo vya data vilivyotengana kimwili ndani ya eneo la Azure vyenye umeme na mtandao huru." },
+        { "term": "Region Pair", "meaning": "Maeneo mawili katika eneo moja la kijiografia yaliyotengana angalau maili 300 kwa usalama wa majanga." }
+      ],
+      "exam_tip": "Kumbuka kuwa sio kila eneo la Azure lina Availability Zones, na Availability Zone inalinda dhidi ya hitilafu ya jengo moja, sio janga la eneo zima.",
+      "common_mistake": "Kufikiri kuwa Availability Zones ziko katika nchi tofauti; Availability Zones ziko ndani ya mpaka wa eneo lile lile la Azure."
+    },
+    "simpler": {
+      "topic": "arch-regions",
+      "language": "sw",
+      "simple_explanation": "Azure Region ni mji au eneo lenye maghala makubwa ya kompyuta za Microsoft. Ndani ya eneo hilo, Microsoft hujenga hadi majengo matatu tofauti yanayoitwa Availability Zones yenye majenereta yao ya umeme. Jengo moja likipata dhoruba au moto, mfumo wako unahamia kwenye jengo la pili bila kukatika.",
+      "official_definition": "Ngazi za kijiografia na kimaunzi zinazohakikisha upatikanaji wa juu wa huduma katika Microsoft Azure.",
+      "african_analogy": "Ni kama kuweka akiba ya pesa sehemu tatu tofauti: mfukoni mwako, kwenye sefu ya nyumbani, na kwenye simu yako. Jambo baya likitokea sehemu moja, hutabaki bila kitu.",
+      "analogy_limits": "Mahali inapokoma: Pesa ya sefu na ya simu zina sheria tofauti, wakati maeneo ya Azure yana maunzi yanayofanana kabisa na kubadilishana taarifa mara moja.",
+      "key_terms": [
+        { "term": "Datacenter", "meaning": "Jengo la kimwili lenye maelfu ya kompyuta na seva zilizounganishwa kwa usalama." },
+        { "term": "Replication", "meaning": "Kunakili data kiotomatiki kati ya maeneo ili kuzuia upotevu wa taarifa." }
+      ],
+      "exam_tip": "Masasisho ya Azure hupelekwa kwa eneo moja tu katika Region Pair kwa wakati mmoja ili kuzuia mifumo yote kusimama pamoja.",
+      "common_mistake": "Kuchanganya Availability Zone (jengo la kimwili) na Resource Group (folda ya kupanga vitu kimantiki)."
+    }
+  },
+  "arch-org": {
+    "standard": {
+      "topic": "arch-org",
+      "language": "sw",
+      "simple_explanation": "Azure inapanga rasilimali katika ngazi nne za uongozi: Management Groups, Subscriptions, Resource Groups, na Resources. Resource ni huduma yoyote binafsi, kama vile virtual machine au hifadhidata ya SQL. Resource Group ni chombo cha kimantiki kinachokusanya rasilimali zinazoshiriki mzunguko mmoja wa maisha. Subscription ni kitengo cha usimamizi, bili, na udhibiti wa ufikiaji. Management Groups ziko kileleni, zikiruhusu mashirika kusimamia haki za watumiaji, sheria za kufuata (policies), na utawala kwenye subscriptions nyingi kwa pamoja.",
+      "official_definition": "Muundo wa ngazi nne wa usimamizi wa rasilimali katika Azure unaojumuisha Management Groups, Subscriptions, Resource Groups, na Resources, ukiwezesha urithishwaji wa sera na haki za RBAC.",
+      "african_analogy": "Fikiria himaya kubwa ya biashara ya familia. Bodi kuu ya wakurugenzi ni Management Group. Kampuni tanzu (duka la dawa, supamaketi, usafirishaji) ni Subscriptions zenye akaunti zao za benki. Vyumba vya kuhifadhia bidhaa kwenye duka ni Resource Groups. Bidhaa zilizopo kwenye rafu ni Resources.",
+      "analogy_limits": "Mahali inapokoma: Katika biashara mfanyakazi anaweza kusogeza boksi kimakosa kati ya vyumba, lakini katika Azure kila rasilimali lazima iwe ndani ya resource group moja tu kwa wakati wowote.",
+      "key_terms": [
+        { "term": "Management Group", "meaning": "Vyombo vinavyosaidia kusimamia ufikiaji na sera kwenye subscriptions nyingi kwa pamoja." },
+        { "term": "Subscription", "meaning": "Mkataba na Microsoft unaounganisha malipo na bili kwa rasilimali za Azure zilizoundwa." },
+        { "term": "Resource Group", "meaning": "Chombo cha kimantiki katika Azure ambacho rasilimali zinazohusiana huwekwa na kusimamiwa kwa pamoja." }
+      ],
+      "exam_tip": "Sera na ruhusa zinazowekwa kwenye ngazi ya juu (kama Management Group) zinarithiwa kiotomatiki na ngazi zote zilizo chini yake.",
+      "common_mistake": "Kuamini kwamba rasilimali moja inaweza kuwepo ndani ya resource groups mbili kwa wakati mmoja; kila rasilimali iko kwenye kundi moja tu."
+    },
+    "simpler": {
+      "topic": "arch-org",
+      "language": "sw",
+      "simple_explanation": "Azure imepangwa kama mafile ndani ya mafile. Chini kabisa kuna vifaa vyako (Resources). Unaviweka kwenye mafolda ya miradi (Resource Groups). Folda hizo zimo ndani ya akaunti ya bili (Subscription). Na kampuni kubwa zinaweka akaunti nyingi za bili chini ya mwavuli mmoja mkuu (Management Groups).",
+      "official_definition": "Mti wa mpangilio unaotumika kupanga malipo, makundi ya kiutendaji, na mipaka ya kiusalama katika Azure.",
+      "african_analogy": "Fikiria shule ya msingi: Halmashauri ya elimu ni Management Group, Shule ni Subscription, Madarasa ni Resource Groups, na Meza na Vitabu ni Resources.",
+      "analogy_limits": "Mahali inapokoma: Wanafunzi hutoka darasa moja kwenda jingine, lakini rasilimali ya Azure inakaa kwenye kundi lake hadi uihamishe wewe mwenyewe.",
+      "key_terms": [
+        { "term": "Inheritance", "meaning": "Wakati sheria na ruhusa zilizowekwa juu zinaposhuka moja kwa moja hadi ngazi za chini." },
+        { "term": "Resource", "meaning": "Kitu chochote unachounda kwenye Azure kama diski, anwani ya IP, au seva pepe." }
+      ],
+      "exam_tip": "Ukifuta Resource Group, rasilimali zote zilizomo ndani yake zinafutwa mara moja. Kuwa mwangalifu sana!",
+      "common_mistake": "Kudhani unahitaji management groups nyingi kutofautisha mazingira ya majaribio na uzalishaji; unaweza kuyapanga kwa subscriptions."
+    }
+  },
+  "arch-compute": {
+    "standard": {
+      "topic": "arch-compute",
+      "language": "sw",
+      "simple_explanation": "Azure Compute inatoa uwezo wa kompyuta kupitia njia mbalimbali: Azure Virtual Machines (VMs) hutoa huduma ya IaaS inayokupa udhibiti wa mfumo endeshi; Virtual Machine Scale Sets (VMSS) huongeza idadi ya VMs zinazofanana kiotomatiki; Azure App Service ni suluhisho la PaaS kwa ajili ya kuweka tovuti na API bila kuwaza kuhusu miundombinu; Azure Container Instances (ACI) huendesha kontena binafsi bila seva; Azure Kubernetes Service (AKS) husimamia makundi makubwa ya kontena; na Azure Functions huendesha msimbo wa serverless pale tukio linapotokea.",
+      "official_definition": "Mkusanyiko mpana wa huduma za kompyuta zilizoundwa kuendesha msimbo, kazi za kontena, seva pepe, na mifumo ya kompyuta za mbali katika viwango tofauti vya usimamizi.",
+      "african_analogy": "VM ni kama kupanga chumba kitupu cha biashara ambapo unaweka rafu na kuajiri mlinzi wako. App Service ni kupanga duka kwenye jengo la kisasa (mall) ambapo usafi na ulinzi unasimamiwa na wenye jengo. Azure Functions ni kuajiri tarishi wa bodaboda anayelipwa tu kwa dakika ishirini anazochukua kupeleka kifurushi kimoja cha dharura.",
+      "analogy_limits": "Mahali inapokoma: Tarishi wa bodaboda anachukua muda kufika ofisini, lakini Azure Function inaanza kufanya kazi ndani ya milisekunde chache mara ombi la tovuti linapofika.",
+      "key_terms": [
+        { "term": "Virtual Machine (VM)", "meaning": "Seva pepe ya kompyuta inayotoa udhibiti kamili wa mfumo endeshi, kumbukumbu, na programu." },
+        { "term": "Azure App Service", "meaning": "Jukwaa la PaaS lililosimamiwa kikamilifu kwa ajili ya kuweka na kupanua tovuti za biashara." },
+        { "term": "Azure Functions", "meaning": "Huduma ya serverless inayoendesha msimbo kulingana na vichocheo vya matukio au vipindi vya muda." }
+      ],
+      "exam_tip": "Swali likitaja kuendesha huduma ndogo ndogo (microservices) kwa kutumia mfumo wa kusimamia makontena, chagua AKS. Kuendesha kontena moja haraka bila usimamizi, chagua ACI.",
+      "common_mistake": "Kuchanganya Azure Functions (inayoendesha msimbo wa programu) na Azure Logic Apps (zana ya kuunganisha mifumo bila kuandika msimbo). "
+    },
+    "simpler": {
+      "topic": "arch-compute",
+      "language": "sw",
+      "simple_explanation": "Compute inamaanisha uwezo wa ubongo wa kompyuta kwenye cloud. Unaweza kukodi kompyuta kamili ya Windows au Linux (VM), kuruhusu Azure iendeshe tovuti yako bila wewe kugusa kompyuta (App Service), au kuandika msimbo mfupi unaofanya kazi pale tu kitufe kinapobonyezwa (Functions).",
+      "official_definition": "Mazingira ya utekelezaji katika Azure kuanzia seva pepe hadi mifumo ya serverless.",
+      "african_analogy": "Kuhusu usafiri: VM ni kukodi gari unaloliendesha mwenyewe. App Service ni kupanda teksi ambapo dereva mwingine anaendesha. Azure Functions ni kuagiza bodaboda kwa safari moja fupi unapotaka kutuma barua.",
+      "analogy_limits": "Mahali inapokoma: Bodaboda haiwezi kubeba abiria ishirini kwa wakati mmoja, lakini Azure Function inaweza kupanuka kuwahudumia maelfu ya watu kwa wakati mmoja.",
+      "key_terms": [
+        { "term": "Virtual Machine Scale Sets", "meaning": "Kikundi cha seva pepe zinazofanana zinazoongezeka au kupungua kulingana na uhitaji." },
+        { "term": "Azure Virtual Desktop", "meaning": "Kutoa mfumo kamili wa eneo-kazi la Windows kwa wafanyakazi wa mbali kupitia mtandao." }
+      ],
+      "exam_tip": "Hitaji likisema 'lipia tu pale ambapo msimbo unafanya kazi halisi', jibu ni Azure Functions (serverless).",
+      "common_mistake": "Kudhani kuwa ni lazima usimamie masasisho ya seva unapoweka tovuti yako kwenye Azure App Service."
+    }
+  },
+  "arch-network": {
+    "standard": {
+      "topic": "arch-network",
+      "language": "sw",
+      "simple_explanation": "Azure Networking inawezesha mawasiliano salama kati ya rasilimali za cloud, mtandao wa umma wa intaneti, na mitandao ya ofisini. Azure Virtual Network (VNet) hutoa mpaka wa mtandao wa faragha uliotengwa kwenye cloud. VNet Peering huunganisha mitandao miwili ya VNet moja kwa moja kupitia mtandao mkuu wa faragha wa Microsoft bila kupita kwenye intaneti ya umma. VPN Gateway hutoa mawasiliano yaliyosimbwa kupitia intaneti ya umma, wakati Azure ExpressRoute hutoa muunganisho wa kujitolea wa kasi ya juu unaopita kando ya intaneti ya umma kabisa. Private Endpoints huwezesha ufikiaji salama wa huduma za PaaS.",
+      "official_definition": "Huduma za mtandao zinazowezesha mawasiliano ya faragha, muunganisho mseto (hybrid), njia za usafirishaji, na usuluhishi wa majina ya vikoa kwenye cloud na ofisini.",
+      "african_analogy": "VNet ni boma lako lenye uzio thabiti. VNet Peering ni kufungua mlango wa siri kati ya boma lako na boma la kaka yako jirani. VPN Gateway ni kutuma gari lenye walinzi kupitia barabara kuu ya lami ya umma. ExpressRoute ni kujenga barabara binafsi ya lami inayounganisha ghala lako moja kwa moja na bandari ya jiji.",
+      "analogy_limits": "Mahali inapokoma: Barabara halisi ya lami inahitaji ununuzi wa ardhi na inachukua miaka kujengwa, wakati ExpressRoute inasanidiwa kidijitali kupitia washirika wa mawasiliano kwa siku chache.",
+      "key_terms": [
+        { "term": "Virtual Network (VNet)", "meaning": "Mtandao wako wa faragha ndani ya Azure wenye anwani za IP za ndani." },
+        { "term": "VNet Peering", "meaning": "Kuunganisha mitandao miwili ya Azure moja kwa moja kupitia mtandao wa ndani wa Microsoft." },
+        { "term": "ExpressRoute", "meaning": "Muunganisho maalum wa kibinafsi wa kasi ya juu unaounganisha ofisi na Azure bila kupitia intaneti." }
+      ],
+      "exam_tip": "ExpressRoute HAITUMII mtandao wa umma wa intaneti. Swali likitaka mawasiliano ya kasi ya juu, ya faragha yenye uhakika bila msongamano wa intaneti, chagua ExpressRoute.",
+      "common_mistake": "Kuamini kuwa VNet Peering inapitisha data kwenye mtandao wa umma; data yote inabaki ndani ya mtandao wa faragha wa Microsoft."
+    },
+    "simpler": {
+      "topic": "arch-network",
+      "language": "sw",
+      "simple_explanation": "Azure Networking inaunganisha kompyuta zako za cloud kwa usalama. VNet ni chumba chako cha faragha kidijitali. VNet Peering inaunganisha vyumba viwili kwa mlango wa siri. Unapotaka kuunganisha ofisi yako na Azure, VPN inatumia intaneti ya umma kwa kufunga data kwa kufuli (encryption), wakati ExpressRoute inajenga bomba maalum la siri linaloepuka intaneti kabisa.",
+      "official_definition": "Miundombinu ya uelekezaji na usafirishaji wa mawasiliano inayotoa muunganisho salama katika Azure.",
+      "african_analogy": "Kutuma barua kwa posta ya kawaida ni mawasiliano ya kawaida ya intaneti. Kuituma ndani ya sanduku lililofungwa kufuli na tarishi mwaminifu ni VPN. Kuweka waya maalum wa simu ya mezani kati ya ofisi mbili ni ExpressRoute.",
+      "analogy_limits": "Mahali inapokoma: Waya wa zamani wa simu hubeba sauti tu, wakati ExpressRoute hubeba mamilioni ya taarifa za kidijitali kwa sekunde.",
+      "key_terms": [
+        { "term": "VPN Gateway", "meaning": "Hutuma taarifa zilizosimbwa kati ya mtandao wa Azure na ofisi yako kupitia intaneti." },
+        { "term": "Private Endpoint", "meaning": "Kiolesura cha mtandao kinachokuunganisha kwa siri na huduma za Azure kwa kutumia IP ya ndani." }
+      ],
+      "exam_tip": "VPN Gateway ni ya gharama nafuu lakini inaweza kuathiriwa na msongamano wa intaneti. ExpressRoute ni ya gharama kubwa zaidi, ya haraka na salama zaidi.",
+      "common_mistake": "Kudhani kuwa lazima ufungue hifadhidata ya SQL kwa intaneti nzima ili iunganishwe na tovuti ya Azure; Private Endpoint inaitunza ndani."
+    }
+  },
+  "arch-storage": {
+    "standard": {
+      "topic": "arch-storage",
+      "language": "sw",
+      "simple_explanation": "Azure Storage hutoa hifadhi imara na yenye uwezo mkubwa wa kupanuka. Huduma kuu ni pamoja na Azure Blob Storage kwa data zisizo na muundo maalum (picha, video, mafaili ya chelezo), Azure Files kwa ajili ya mafolda yanayoshirikiwa ofisini kupitia itifaki za SMB/NFS, na Azure Managed Disks kwa anatopeke za VMs. Kuna madaraja manne ya ufikiaji: Hot (kwa data zinazotumiwa mara kwa mara), Cool (angalau siku 30), Cold (angalau siku 90), na Archive (kwa nakala za kuhifadhi muda mrefu, angalau siku 180). Chaguzi za unakili ni pamoja na LRS, ZRS, na GRS.",
+      "official_definition": "Jukwaa la hifadhi ya cloud lenye uwezo mkubwa wa kubeba data, likitoa huduma za maumbo ya vitu (blobs), mafaili, na diski zenye chaguzi za kunakili na madaraja ya bei kulingana na mzunguko wa maisha ya data.",
+      "african_analogy": "Fikiria kuhusu kuhifadhi nafaka baada ya mavuno. Hot tier ni gunia la unga lililopo jikoni kwa ajili ya kupika chakula cha jioni. Cool tier ni chumba cha ghala unachofungua mara moja kwa mwezi. Archive tier ni ghala lililofungwa na kupigwa bati shambani kwa ajili ya miaka ya ukame, likichukua masaa mengi kulifungua na kulikagua.",
+      "analogy_limits": "Mahali inapokoma: Nafaka halisi inaweza kuharibika au kuliwa na wadudu, wakati Azure Archive Storage inalinda data kwa kiwango cha uimara cha 99.999999999% (9 kumi na moja) bila kupoteza byte hata moja.",
+      "key_terms": [
+        { "term": "Azure Blob Storage", "meaning": "Hifadhi kubwa ya vitu (objects) visivyo na muundo maalum kama picha, nyaraka, na nakala rudufu." },
+        { "term": "Access Tiers", "meaning": "Madaraja ya Hot, Cool, Cold, na Archive yanayopanga bei ya uhifadhi kulingana na kasi ya ufikiaji." },
+        { "term": "Locally Redundant Storage (LRS)", "meaning": "Inanakili data yako mara tatu ndani ya kituo kimoja cha data katika eneo la msingi." }
+      ],
+      "exam_tip": "Archive tier ina gharama ya chini kabisa ya kuhifadhi data lakini gharama ya juu zaidi ya kutoa data, na inachukua masaa kadhaa kurejesha data hiyo (rehydration).",
+      "common_mistake": "Kuweka data za hifadhidata zinazobadilika mara kwa mara kwenye Archive tier; Archive ni ya kuhifadhi taarifa za zamani zisizoguswa."
+    },
+    "simpler": {
+      "topic": "arch-storage",
+      "language": "sw",
+      "simple_explanation": "Azure Storage ni kabati kubwa la kidijitali kwa ajili ya kuhifadhi mafaili yako. Unaweka picha na video kwenye Blob Storage, unashiriki mafolda ya ofisi kwa Azure Files, na unaweka diski za kompyuta kwa kutumia Managed Disks. Ikiwa hufungui faili mara kwa mara, lihamishe kwenye daraja la Archive ili ulipe senti chache sana kwa mwezi.",
+      "official_definition": "Huduma za kuhifadhi data kwenye cloud zenye madaraja ya bei na unakili wa data kwenye vituo vingi.",
+      "african_analogy": "Hot tier ni pesa zilizopo mfukoni mwako. Cool tier ni pesa zilizopo kwenye akaunti ya akiba benki. Archive tier ni akaunti ya amana maalum (fixed deposit) ambayo huwezi kuigusa bila kujaza fomu na kusubiri siku kadhaa.",
+      "analogy_limits": "Mahali inapokoma: Akaunti ya amana huleta riba, wakati huduma ya cloud inatoza ada ndogo kwa ajili ya kutunza na kutoa data.",
+      "key_terms": [
+        { "term": "Geo-Redundant Storage (GRS)", "meaning": "Inanakili data yako mara sita: mara tatu katika eneo lako la kwanza na mara tatu katika eneo lingine lililooanishwa." },
+        { "term": "Azure Files", "meaning": "Mafolda ya pamoja mtandaoni yanayofikiwa kwa urahisi kutoka kompyuta za Windows, Mac, na Linux." }
+      ],
+      "exam_tip": "Swali likitaja folda za mtandao zinazoweza kufikiwa na kompyuta za ofisini kupitia itifaki ya SMB, chagua Azure Files.",
+      "common_mistake": "Kusahau kuwa LRS inalinda tu dhidi ya kuharibika kwa diski moja, si dhidi ya mafuriko au kukatika kwa umeme kwenye jengo zima."
+    }
+  },
+  "arch-identity": {
+    "standard": {
+      "topic": "arch-identity",
+      "language": "sw",
+      "simple_explanation": "Microsoft Entra ID (zamani Azure Active Directory) ni huduma ya Azure ya usimamizi wa vitambulisho na ufikiaji kwenye cloud. Inasimamia uthibitishaji (Authentication - kuthibitisha wewe ni nani) na idhini (Authorization - kuthibitisha kile unachoruhusiwa kufanya). Usalama wake umejengwa juu ya kanuni ya Zero Trust: usiamini kamwe, thibitisha kila wakati, tarajia uvamizi. Vipengele muhimu ni pamoja na Multi-Factor Authentication (MFA), Conditional Access (kutathmini eneo, usalama wa kifaa, na hatari kabla ya kuruhusu kuingia), na Role-Based Access Control (RBAC).",
+      "official_definition": "Jukwaa la usimamizi wa utambulisho na ufikiaji linalotekeleza viwango vya kisasa vya uthibitishaji, Conditional Access, Role-Based Access Control (RBAC), na mifumo ya Zero Trust.",
+      "african_analogy": "Fikiria kutembelea chumba cha siri cha kuhifadhia dhahabu katika benki kuu. Authentication ni kuonyesha kitambulisho chako cha taifa na alama za vidole ili kuthibitisha wewe ni nani. Authorization ni karani wa benki kuangalia iwapo cheo chako kinakuruhusu kufungua sanduku namba 42 la dhahabu.",
+      "analogy_limits": "Mahali inapokoma: Mlinzi wa benki anaweza kudanganywa na suti nzuri au hongo, lakini Entra ID inathibitisha vyeti vya kidijitali na ishara za usalama mashine kwa mashine kwa sekunde chache.",
+      "key_terms": [
+        { "term": "Microsoft Entra ID", "meaning": "Huduma ya utambulisho ya cloud inayotoa kuingia mara moja (SSO) na usalama wa akaunti." },
+        { "term": "Authentication vs Authorization", "meaning": "Authentication inathibitisha utambulisho (wewe ni nani); Authorization inathibitisha ruhusa (unaloruhusiwa kufanya)." },
+        { "term": "Role-Based Access Control (RBAC)", "meaning": "Kumpa mtumiaji ruhusa ndogo anazohitaji tu kutekeleza majukumu yake ya kazi (least privilege)." }
+      ],
+      "exam_tip": "Elewa tofauti: Authentication = uthibitisho wa utambulisho; Authorization = ukaguzi wa ruhusa. Mtihani wa AZ-900 unapenda kupima tofauti hii.",
+      "common_mistake": "Kudhani Microsoft Entra ID ni sawa na Active Directory ya zamani ya Windows Server; Entra ID inatumia itifaki za kisasa za wavuti kama OAuth na SAML."
+    },
+    "simpler": {
+      "topic": "arch-identity",
+      "language": "sw",
+      "simple_explanation": "Microsoft Entra ID ndiye mlinzi mkuu wa mlango wa Azure. Unapoingia, anakagua kitambulisho chako (Authentication). Ukishaingia ndani, anakagua kile unachoruhusiwa kugusa (Authorization). Multi-Factor Authentication inahitaji uthibitisho mara mbili (kama nenosiri lako pamoja na ujumbe kwenye simu yako) ili wadukuzi wasiibe akaunti yako.",
+      "official_definition": "Mifumo ya usimamizi wa vitambulisho na ufikiaji inayotekeleza uthibitishaji thabiti kwenye rasilimali za cloud.",
+      "african_analogy": "Authentication ni kuonyesha kitambulisho chako cha taifa mlangoni mwa kijiji. Authorization ni kuwa na kibali cha chifu kinachokuruhusu kuketi kwenye kikao cha wazee wa baraza.",
+      "analogy_limits": "Mahali inapokoma: Walinzi wa kijiji wanakumbuka sura za watu kwa mazoea, wakati mifumo ya kompyuta inakagua nambari za kidijitali kila wakati unapoomba huduma.",
+      "key_terms": [
+        { "term": "Multi-Factor Authentication (MFA)", "meaning": "Kuhitaji mbinu mbili au zaidi za uthibitishaji (kitu unachojua, ulicho nacho, au ulivyo) ili kuingia." },
+        { "term": "Conditional Access", "meaning": "Sheria za kiotomatiki kama 'zuia kuingia kutoka nchi za kigeni isipokuwa kwa kibali cha MFA'." }
+      ],
+      "exam_tip": "Kanuni ya Least Privilege inamaanisha kumpa mfanyakazi ruhusa za chini kabisa anazohitaji kufanya kazi yake, sio kumpa cheo cha Administrator kwa kila mtu.",
+      "common_mistake": "Kufikiri kwamba nenosiri pekee linatosha kulinda akaunti; mifumo ya kisasa ya Azure hutumia utambulisho kama ukuta mkuu wa ulinzi."
+    }
+  },
+  "gov-cost": {
+    "standard": {
+      "topic": "gov-cost",
+      "language": "sw",
+      "simple_explanation": "Azure Cost Management inasaidia mashirika kufuatilia, kutenga, na kuboresha matumizi ya fedha kwenye cloud. Gharama zinaathiriwa na aina ya rasilimali, muda wa matumizi, eneo, na mtandao unaotoka nje (egress). Zana zinazotumika ni pamoja na Azure Pricing Calculator (inakadiria gharama kabla ya kuanza), Total Cost of Ownership (TCO) Calculator (inalinganisha gharama za ofisini na akiba ya kuhamia Azure), Azure Cost Management + Billing (inachambua matumizi halisi na kutoa tahadhari za bajeti), na Resource Tags (lebo zinazowekwa kupanga bili kwa idara).",
+      "official_definition": "Uwezo wa usimamizi wa kifedha katika Azure unaojumuisha zana za kukadiria bei kabla ya kuanza, uchambuzi wa matumizi ya zamani, viwango vya bajeti, na utozaji kulingana na vitambulisho vya lebo (tags).",
+      "african_analogy": "Kujenga nyumba na mkandarasi anayeweka hesabu wazi. Pricing Calculator ni makadirio ya vifaa (bill of quantities) kabla ya kununua mawe. Resource Tags ni kuweka rangi tofauti kwenye mifuko ya saruji: lebo nyekundu ya jengo kuu, na lebo ya njano ya ukuta wa uzio, ili ujue hasa pesa zako zilikwenda wapi.",
+      "analogy_limits": "Mahali inapokoma: Vifaa vya ujenzi vinaweza kuibwa kiwanjani na mafundi wasio waaminifu, lakini matumizi ya kompyuta kwenye cloud yanapimwa kwa sekunde na mfumo wa kompyuta.",
+      "key_terms": [
+        { "term": "Pricing Calculator", "meaning": "Zana ya wavuti ya kukadiria gharama za kila mwezi unazoweza kutumia kwenye Azure kulingana na rasilimali unazochagua." },
+        { "term": "Resource Tags", "meaning": "Lebo za majina na thamani (key-value) zinazowekwa kwenye rasilimali ili kupanga bili na umiliki wa miradi." },
+        { "term": "Cost Alerts", "meaning": "Barua pepe za kiotomatiki zinazotumwa wakati matumizi halisi yanapokaribia au kuvuka bajeti uliyopanga." }
+      ],
+      "exam_tip": "Kuingiza data kwenye vituo vya data vya Azure (inbound) ni bure; kutoa data nje ya vituo vya data vya Azure kwenda kwenye intaneti (egress) kunatozwa ada kwa gigabyte.",
+      "common_mistake": "Kutumia Pricing Calculator kuangalia bili ya sasa; Pricing Calculator ni ya makadirio ya siku zijazo, wakati Cost Management ni ya kufuatilia bili halisi ya sasa."
+    },
+    "simpler": {
+      "topic": "gov-cost",
+      "language": "sw",
+      "simple_explanation": "Azure inakupa zana za kuzuia bili za kushtukiza. Unatumia Pricing Calculator kukadiria gharama ya mradi kabla ya kuanza. Unapoanza kufanya kazi, unatumia Cost Management kuweka kiwango cha mwisho cha bajeti na kupokea ujumbe wa tahadhari iwapo matumizi yanapanda kwa kasi. Pia unaweka Tags kupanga gharama kwa kila mradi.",
+      "official_definition": "Zana za uchambuzi wa gharama na ufuatiliaji wa bajeti katika Microsoft Azure.",
+      "african_analogy": "Ni kama kuwa na mita ya umeme sebuleni kwako inayolia kwa sauti kubwa kila wakati matumizi ya mwezi yanapozidi shilingi elfu mbili, ikikukumbusha kuzima hita nzito za maji.",
+      "analogy_limits": "Mahali inapokoma: Mita ya kawaida ya umeme inatoa sauti tu, lakini mfumo wa Azure unaweza kuendesha msimbo wa kuzima seva za majaribio kiotomatiki bajeti ikipitiliza.",
+      "key_terms": [
+        { "term": "Budget", "meaning": "Kiwango cha juu cha matumizi ulichopanga kwenye Azure kinachokutahadharisha kabla hujazidisha pesa." },
+        { "term": "Egress Traffic", "meaning": "Data inayotoka kwenye vituo vya data vya Azure kwenda kwenye mtandao wa intaneti inayotozwa ada." }
+      ],
+      "exam_tip": "Resource tags hazishuki chini kwenye rasilimali zilizomo kiotomatiki; unahitaji Azure Policy kuhakikisha lebo zinarithiwa.",
+      "common_mistake": "Kudhani maeneo yote ya Azure yanatoza bei moja; maeneo tofauti yana gharama tofauti za umeme na maunzi."
+    }
+  },
+  "gov-governance": {
+    "standard": {
+      "topic": "gov-governance",
+      "language": "sw",
+      "simple_explanation": "Azure Governance inahakikisha viwango vya kufuata sheria, usalama, na uthabiti wa kiutendaji katika mifumo yote. Azure Policy inalazimisha sheria na vizuizi (kama vile kuzuia ukubwa wa seva usioidhinishwa au kuzuia uundaji nje ya maeneo maalum) ili kuzuia makosa. Resource Locks huzuia kufutwa au kubadilishwa kwa rasilimali muhimu kwa kutumia kufuli za 'CanNotDelete' au 'ReadOnly'. Microsoft Purview inatoa usimamizi mpana wa data na uainishaji wa taarifa nyeti. Service Trust Portal inatoa ripoti za ukaguzi wa usalama na vyeti vya ubora vya Microsoft.",
+      "official_definition": "Mfumo mpana wa utawala unaosimamia uzingatiaji wa sheria, ulinzi wa rasilimali, na uthibitisho wa usalama kupitia Azure Policy, Resource Locks, na Microsoft Purview.",
+      "african_analogy": "Fikiria mkaguzi wa majengo wa halmashauri ya jiji. Azure Policy ni sheria ya jiji inayokataza kujenga viwanda vya moshi katikati ya mtaa wa makazi ya watu. Resource Locks ni kuweka kufuli kubwa kwenye bomba kuu la maji ya mji ili mtu yeyote asizime maji ya wakazi kimakosa.",
+      "analogy_limits": "Mahali inapokoma: Wakaguzi wa kibinadamu hupita mara chache na wanaweza kukosa kuona kosa, wakati Azure Policy inakagua kila usanidi wa rasilimali mara moja wakati inapotengenezwa.",
+      "key_terms": [
+        { "term": "Azure Policy", "meaning": "Huduma inayounda na kusimamia sheria za kulazimisha viwango vya shirika na usalama wa mifumo." },
+        { "term": "Resource Locks", "meaning": "Vizuizi vinavyowekwa kwenye rasilimali kuzuia kufutwa (CanNotDelete) au kubadilishwa (ReadOnly) kimakosa." },
+        { "term": "Service Trust Portal", "meaning": "Tovuti ya umma inayotoa ripoti za ukaguzi wa usalama wa Microsoft, viwango vya ISO, na nyaraka za sheria." }
+      ],
+      "exam_tip": "Resource locks zina nguvu kuliko ruhusa za RBAC: hata Subscription Owner hawezi kufuta rasilimali yenye kufuli ya 'CanNotDelete' hadi kufuli hiyo iondolewe kwanza.",
+      "common_mistake": "Kuchanganya Azure Policy (inayokagua sifa za rasilimali na mipangilio yake) na RBAC (inayokagua ni nani anayeruhusiwa kufanya jambo fulani)."
+    },
+    "simpler": {
+      "topic": "gov-governance",
+      "language": "sw",
+      "simple_explanation": "Governance inamaanisha kuweka uzio na miongozo ili wahandisi wasifanye makosa ya gharama kubwa. Azure Policy inazuia watu kutengeneza seva katika nchi zisizoruhusiwa. Resource Locks zinaweka kufuli imara kwenye hifadhidata yako kuu ili mtu yeyote asiiweze kuifuta kimakosa, hata awe msimamizi mkuu.",
+      "official_definition": "Utekelezaji wa sera na ulinzi wa rasilimali katika Microsoft Azure.",
+      "african_analogy": "Ni kama gavana wa mwendo (speed governor) aliyewekwa kwenye basi la abiria. Hata dereva akikanyaga mafuta hadi mwisho, gari haliwezi kuvuka kasi iliyopangwa ili kulinda maisha ya watu.",
+      "analogy_limits": "Mahali inapokoma: Gavana wa mwendo hudhibiti kasi tu, wakati Azure Policy inaweza kudhibiti maelfu ya sheria tofauti za kiufundi kwa wakati mmoja.",
+      "key_terms": [
+        { "term": "CanNotDelete Lock", "meaning": "Inaruhusu watumiaji kusoma na kurekebisha rasilimali, lakini inazuia kabisa kuifuta." },
+        { "term": "ReadOnly Lock", "meaning": "Inazuia mabadiliko au ufutaji wowote, ikiruhusu tu kutazama taarifa za rasilimali." }
+      ],
+      "exam_tip": "Ikiwa msimamizi mwenye mamlaka kamili anapaswa kuzuiwa kufuta hifadhidata ya uzalishaji kimakosa, weka CanNotDelete Resource Lock.",
+      "common_mistake": "Kufikiri kuwa lazima uandike msimbo mgumu kuanzisha sheria za shirika; Azure Policy ina mifano mamia iliyotengenezwa tayari."
+    }
+  },
+  "gov-tools": {
+    "standard": {
+      "topic": "gov-tools",
+      "language": "sw",
+      "simple_explanation": "Azure inatoa zana mbalimbali za usimamizi: Azure Portal ni tovuti ya picha na vitufe kwenye kivinjari; Azure Cloud Shell ni kituo cha amri kinachopatikana mtandaoni chenye Bash na PowerShell bila kusakinisha programu; Azure CLI ni zana ya amri inayofanya kazi kwenye mifumo yote kwa Python; na Azure PowerShell hutoa amri za utekelezaji wa kazi. Kwa ajili ya kuunda miundombinu kiotomatiki kupitia msimbo (IaC), ARM templates na Azure Bicep hutoa mifumo ya muundo wa JSON na lugha maalum. Azure Arc inapanua usimamizi wa Azure hadi kwenye seva za ofisini au cloud nyingine.",
+      "official_definition": "Violesura vya kiutawala, zana za amri (CLI/PowerShell), mifumo ya Infrastructure as Code (ARM/Bicep), na usimamizi wa mifumo ya mseto kupitia Azure Arc.",
+      "african_analogy": "Kusimamia kundi kubwa la malori ya mizigo. Azure Portal ni ubao mweupe ofisini kwa meneja unaoonyesha picha na njia za magari. CLI na PowerShell ni redio za mawasiliano zinazotuma amri za haraka kwa madereva wote. Azure Arc ni kuweka vifaa vya GPS kwenye malori ya washirika ili yaonekane kwenye ubao wako.",
+      "analogy_limits": "Mahali inapokoma: Madereva wa kibinadamu wanaweza kukosea kuelewa amri za redio, wakati amri za CLI kwenye kompyuta zinatekeleza shughuli kwa uhakika wa asilimia mia moja.",
+      "key_terms": [
+        { "term": "Azure Cloud Shell", "meaning": "Kituo cha amri kwenye kivinjari chenye zana zote zilizowekwa tayari kwa ajili ya kusimamia Azure." },
+        { "term": "Infrastructure as Code (IaC)", "meaning": "Kufafanua na kusambaza miundombinu ya kompyuta kupitia mafaili ya msimbo (ARM au Bicep)." },
+        { "term": "Azure Arc", "meaning": "Daraja linalopanua huduma na usimamizi wa Azure kwenda kwenye seva za ndani ya ofisi au cloud nyingine." }
+      ],
+      "exam_tip": "Mifumo ya ARM templates hutumia muundo wa declarative (unafafanua nini unachotaka kiwepo, si hatua kwa hatua jinsi ya kukijenga).",
+      "common_mistake": "Kuamini kwamba Azure CLI inafanya kazi kwenye Linux pekee; Azure CLI inafanya kazi kwenye Windows, macOS, Linux, na Cloud Shell."
+    },
+    "simpler": {
+      "topic": "gov-tools",
+      "language": "sw",
+      "simple_explanation": "Unaweza kuongoza Azure kwa njia tofauti: kubonyeza vitufe kwenye kivinjari chako (Azure Portal), kuandika amri za maneno kwenye kibodi (CLI au PowerShell), au kuandika faili la ramani linalounda seva 100 zinazofanana ndani ya dakika chache (Bicep/ARM). Azure Arc inakuruhusu hata kusimamia seva za ofisini kwako kwa kutumia Azure.",
+      "official_definition": "Violesura vya usimamizi na zana za kiotomatiki za kuunda na kudhibiti mifumo ya Azure.",
+      "african_analogy": "Unaweza kuendesha trekta la kisasa kwa usukani na gia (Portal), au unaweza kupanga mfumo wa satelaiti wa GPS kulima shamba zima usiku kucha kiotomatiki (Infrastructure as Code).",
+      "analogy_limits": "Mahali inapokoma: Trekta linaweza kukwama kwenye matope, wakati msimbo wa cloud unatekelezwa kwenye vituo vya data bila vikwazo vya ardhi.",
+      "key_terms": [
+        { "term": "Azure Portal", "meaning": "Kiolesura cha wavuti chenye picha na vitufe kwa ajili ya kuunda na kusimamia huduma za Azure." },
+        { "term": "Bicep", "meaning": "Lugha rahisi na safi iliyotengenezwa na Microsoft kwa ajili ya kuandika Infrastructure as Code katika Azure." }
+      ],
+      "exam_tip": "Swali likiuliza zana ya kuandika amri kwenye kivinjari bila kuhitaji kusakinisha chochote kwenye kompyuta yako ya mkononi, chagua Azure Cloud Shell.",
+      "common_mistake": "Kudhani kuwa ni lazima ubonyeze vitufe kila wakati unapotaka kuunda seva mpya; tumia templates kwa mifumo ya uzalishaji."
+    }
+  },
+  "gov-monitor": {
+    "standard": {
+      "topic": "gov-monitor",
+      "language": "sw",
+      "simple_explanation": "Azure inatoa ufuatiliaji wa pamoja, taarifa za afya ya mifumo, na ushauri wa kitaalamu. Azure Advisor inachambua usanidi wa rasilimali zako na kutoa mapendekezo katika nguzo tano: Reliability, Security, Performance, Cost, na Operational Excellence. Azure Service Health inatoa taarifa zilizobinafsishwa kuhusu hitilafu za huduma za Azure duniani, matengenezo yaliyopangwa, na ushauri. Azure Monitor inakusanya na kuchambua taarifa kutoka mifumo yote, ikitumia Log Analytics kuuliza rekodi za uchunguzi na Application Insights kufuatilia utendaji wa tovuti na hitilafu.",
+      "official_definition": "Huduma za ufuatiliaji wa kiutendaji zinazotoa ukusanyaji wa takwimu (Azure Monitor), uchambuzi wa kumbukumbu (Log Analytics), ufuatiliaji wa tovuti (Application Insights), na ushauri (Azure Advisor).",
+      "african_analogy": "Fikiria hospitali ya kisasa. Azure Monitor ni mashine ya kupima mapigo ya moyo na oksijeni ya mgonjwa kila sekunde. Application Insights ni stethoskopu ya daktari inayotambua maumivu ya ndani. Azure Advisor ni mshauri wa lishe anayekagua vipimo na kupendekeza chakula bora ili kuzuia magonjwa ya baadaye.",
+      "analogy_limits": "Mahali inapokoma: Afya ya binadamu inabadilika kulingana na hisia zisizotabirika, wakati takwimu za cloud zinafuata namba kamili za kihisabati (asilimia ya CPU, nambari za hitilafu za HTTP 500).",
+      "key_terms": [
+        { "term": "Azure Advisor", "meaning": "Mshauri wa kibinafsi wa cloud anayetoa mapendekezo ya gharama, usalama, uimara, na utendaji." },
+        { "term": "Azure Service Health", "meaning": "Dashibodi inayokujulisha kuhusu matatizo ya huduma za Azure, matengenezo, na afya ya vituo vya data unavyotumia." },
+        { "term": "Application Insights", "meaning": "Kipengele cha Azure Monitor kinachofuatilia utendaji, makosa, na tabia za wageni kwenye tovuti yako." }
+      ],
+      "exam_tip": "Mapendekezo ya Azure Advisor yamepangwa katika nguzo tano: Cost, Security, Reliability, Performance, na Operational Excellence.",
+      "common_mistake": "Kuchanganya Azure Status (ukurasa wa umma wa hali ya huduma zote za Azure duniani) na Azure Service Health (ukurasa wako binafsi unaoonyesha huduma unazotumia tu)."
+    },
+    "simpler": {
+      "topic": "gov-monitor",
+      "language": "sw",
+      "simple_explanation": "Azure ina madaktari na ving'ora vya tahadhari vilivyojengwa ndani. Azure Monitor inaangalia matumizi ya kumbukumbu, diski na kasi ya mtandao. Application Insights inakuambia tovuti yako inapopata hitilafu kwa wateja. Azure Service Health inakutaarifu iwapo kituo cha data cha Microsoft kina shida. Na Azure Advisor inakuelekeza jinsi ya kuokoa pesa na kuongeza usalama.",
+      "official_definition": "Ukusanyaji wa takwimu za mifumo, uchunguzi wa utendaji, na usimamizi wa tahadhari katika Azure.",
+      "african_analogy": "Ni kama vipimo kwenye dashibodi ya gari: spidomita na taa ya mafuta (Azure Monitor), taa ya onyo ya injini (Application Insights), na fundi wako unayemwamini anayekupa ushauri wa kuboresha gari (Azure Advisor).",
+      "analogy_limits": "Mahali inapokoma: Dashibodi ya gari inaonyesha taa kwa dereva aliyepo ndani tu, wakati Azure Monitor inaweza kutuma ujumbe wa SMS au simu ya dharura kwa wahandisi popote walipo duniani.",
+      "key_terms": [
+        { "term": "Azure Monitor", "meaning": "Kituo kikuu cha kukusanya takwimu na kumbukumbu kutoka kwenye miundombinu yako ya Azure." },
+        { "term": "Log Analytics", "meaning": "Zana ya kutafuta na kuchambua kumbukumbu za mfumo kwa kutumia lugha ya Kusto (KQL)." }
+      ],
+      "exam_tip": "Kutafuta seva pepe zisizotumika au zilizolala ili uzizime na kuokoa pesa, angalia mapendekezo ya Azure Advisor ya Cost.",
+      "common_mistake": "Kudhani Azure Monitor inafanya kazi kwenye Azure pekee; inaweza pia kukusanya rekodi kutoka kwenye seva za ofisini kwako."
+    }
+  }
+}

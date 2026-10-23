@@ -1,0 +1,333 @@
+{
+  "_review": "Needs native-speaker review",
+  "cloud-basics": [
+    {
+      "id": "cloud-basics-f01",
+      "question": "Nani anayewajibika kulinda data ya mteja wakati wa kutumia huduma za SaaS?",
+      "answer": "Chini ya Shared Responsibility Model, mteja anawajibika kila wakati kwa asilimia 100 kulinda data yake, taarifa, na ufikiaji wa akaunti za watumiaji, hata kwenye huduma za SaaS kama Microsoft 365. Microsoft inalinda vituo vya data na programu, lakini wewe unalinda mafaili yako na manenosiri."
+    },
+    {
+      "id": "cloud-basics-f02",
+      "question": "Je, Microsoft inashiriki wajibu wa usalama wa kituo cha data cha kimwili na mteja?",
+      "answer": "Hapana. Katika public cloud kama Azure, usalama wa kimwili wa majengo ya vituo vya data, uzio wa ulinzi, seva za kimwili, umeme, na mifumo ya kupoeza unasimamiwa na Microsoft pekee."
+    },
+    {
+      "id": "cloud-basics-f03",
+      "question": "Ni ipi tofauti kuu ya majukumu kati ya IaaS na PaaS?",
+      "answer": "Katika IaaS (kama Azure Virtual Machines), mteja anawajibika kusakinisha, kusanidi, na kusasisha mfumo endeshi (OS) na programu. Katika PaaS (kama Azure App Service), Microsoft inasimamia uendeshaji wote wa mfumo endeshi na ulinzi wake kiotomatiki."
+    },
+    {
+      "id": "cloud-basics-f04",
+      "question": "Kwa nini usalama wa vifaa vya watumiaji (laptops, simu) unabaki kuwa wajibu wa mteja?",
+      "answer": "Microsoft haina udhibiti wa kimwili au wa kiutawala juu ya kompyuta au simu zinazotumiwa na wafanyakazi wako. Kulinda vifaa hivyo kwa manenosiri na usimbaji fiche wa diski ni wajibu kamili wa mteja."
+    }
+  ],
+  "cloud-models": [
+    {
+      "id": "cloud-models-f01",
+      "question": "Ni lini shirika linapaswa kuchagua hybrid cloud badala ya public cloud pekee?",
+      "answer": "Hybrid cloud ni bora pale ambapo sheria za nchi au benki zinataka taarifa za fedha zibaki ndani ya seva za ofisini (on-premises), huku programu za tovuti za wateja zikiendeshwa kwenye Azure kwa ajili ya uwezo mkubwa wa kupanuka."
+    },
+    {
+      "id": "cloud-models-f02",
+      "question": "Je, private cloud haina gharama zozote za uendeshaji baada ya kuanzishwa?",
+      "answer": "Hapana. Private cloud inahitaji gharama kubwa za mara kwa mara: shirika lazima linunue maunzi, lilipe bili za umeme na viyoyozi vya kupoza seva, libadilishe diski zilizoharibika, na liajiri mafundi wa kudumu wa mifumo."
+    },
+    {
+      "id": "cloud-models-f03",
+      "question": "Nini maana ya multi-tenancy kwenye public cloud, na je kuna hatari ya kuvuja kwa data?",
+      "answer": "Multi-tenancy inamaanisha wateja wengi wanashiriki seva moja ya kimwili. Azure inazuia kuvuja kwa data kupitia teknolojia ya kisasa ya virtualization na utenganisho wa kumbukumbu uliosimbwa, ikihakikisha usalama kamili."
+    },
+    {
+      "id": "cloud-models-f04",
+      "question": "Je, shirika linaweza kuhamia Azure kutoka private cloud hatua kwa hatua?",
+      "answer": "Ndiyo. Hiyo ndiyo nguvu ya hybrid cloud. Mashirika mengi huunganisha mifumo yao ya ofisini na Azure kupitia VPN au ExpressRoute na kuhamisha programu chache chache kwa awamu."
+    }
+  ],
+  "cloud-pricing": [
+    {
+      "id": "cloud-pricing-f01",
+      "question": "Je, CapEx inatofautianaje na OpEx katika mahesabu ya biashara?",
+      "answer": "CapEx inahusisha kutoa pesa nyingi mwanzo kununua mali za kimwili ambazo thamani yake hupungua (depreciation) kwa miaka. OpEx inahusisha gharama za kila siku za uendeshaji ambazo zinahesabiwa kwenye kodi ya mwaka husika wa matumizi."
+    },
+    {
+      "id": "cloud-pricing-f02",
+      "question": "Nikisimamisha Virtual Machine kwenye Azure, je malipo yote yanasimama mara moja?",
+      "answer": "Bili ya uwezo wa kompyuta (compute) inasimama, lakini unaendelea kulipia kiasi kidogo kwa ajili ya diski za hifadhi na anwani za IP zilizotengwa kwa sababu Azure inaendelea kukuhifadhia taarifa zako."
+    },
+    {
+      "id": "cloud-pricing-f03",
+      "question": "Ni ipi faida kuu ya bei ya matumizi (consumption pricing) kwa biashara changa?",
+      "answer": "Wajasiriamali wanaweza kuanzisha miradi ya kidijitali bila mtaji mkubwa wa kununua kompyuta, wakilipa senti chache tu wakati watumiaji wakiwa wachache, na kuongeza bajeti kadri mapato yanavyoongezeka."
+    },
+    {
+      "id": "cloud-pricing-f04",
+      "question": "Je, bili ya Azure inaweza kuleta mshangao usipoisimamia vizuri?",
+      "answer": "Ndiyo. Kwa sababu bei inategemea matumizi, ongezeko lisilotarajiwa la wageni au mifumo ya majaribio iliyoachwa wazi inaweza kuongeza gharama. Ndiyo maana kuweka tahadhari za bajeti kwenye Cost Management ni muhimu."
+    }
+  ],
+  "cloud-benefits": [
+    {
+      "id": "cloud-benefits-f01",
+      "question": "Ni ipi tofauti halisi kati ya scalability na elasticity?",
+      "answer": "Scalability ni uwezo wa mfumo wako kupanuka na kubeba kazi nyingi zaidi. Elasticity ni uwezo wa mfumo huo kujiongeza na kujipunguza kiotomatiki papo hapo kulingana na wimbi la wateja."
+    },
+    {
+      "id": "cloud-benefits-f02",
+      "question": "Vertical scaling inatofautianaje na horizontal scaling?",
+      "answer": "Vertical scaling (scaling up) ni kuongeza nguvu ya CPU au RAM kwenye seva moja iliyopo. Horizontal scaling (scaling out) ni kuongeza idadi ya seva zaidi zinazofanana kando kando ili kugawana kazi."
+    },
+    {
+      "id": "cloud-benefits-f03",
+      "question": "Nini maana ya High Availability kwa huduma ya tovuti yangu?",
+      "answer": "High Availability inahakikisha kuwa tovuti yako inaendelea kupatikana mtandaoni bila kukatika kwa kutumia seva mbadala, ikilindwa na mikataba ya Microsoft SLA inayofikia asilimia 99.9% hadi 99.99%."
+    },
+    {
+      "id": "cloud-benefits-f04",
+      "question": "Je, cloud inasaidiaje wakati wa majanga makubwa (disaster recovery)?",
+      "answer": "Badala ya kujenga jengo la pili la seva ofisini kwa gharama kubwa, cloud inakuruhusu kunakili data na kuweka mifumo ya dharura kwenye eneo lingine la mbali kwa gharama ndogo sana."
+    }
+  ],
+  "cloud-service-types": [
+    {
+      "id": "cloud-service-types-f01",
+      "question": "Ni lini timu yangu inapaswa kuchagua IaaS badala ya PaaS?",
+      "answer": "Chagua IaaS pale programu yako inapohitaji usanidi maalum wa mfumo endeshi, programu za zamani za kompyuta, au unapohamisha seva za zamani za ofisini kwenda Azure kwa mabadiliko machache sana (lift-and-shift)."
+    },
+    {
+      "id": "cloud-service-types-f02",
+      "question": "Ni zipi faida kuu za watengenezaji programu wanapotumia PaaS kama Azure App Service?",
+      "answer": "PaaS inamruhusu mwandishi wa programu kuzingatia kuandika msimbo tu. Microsoft inasimamia urekebishaji wa seva, usalama wa mfumo endeshi, na kuongeza uwezo kiotomatiki."
+    },
+    {
+      "id": "cloud-service-types-f03",
+      "question": "Je, Microsoft 365 inaainishwa kama IaaS, PaaS, au SaaS?",
+      "answer": "Microsoft 365 (ikiwa ni pamoja na Word, Excel, na Teams mtandaoni) ni mfano kamili wa Software as a Service (SaaS). Watumiaji wanaitumia moja kwa moja kupitia mtandao bila kusimamia maunzi yoyote."
+    },
+    {
+      "id": "cloud-service-types-f04",
+      "question": "Ni nini kinachofanya serverless kuwa tofauti na huduma ya kawaida ya PaaS?",
+      "answer": "Serverless (kama Azure Functions) huendesha msimbo pale tu tukio linapotokea, inajizima kabisa wakati hakuna kazi, na inakutoza tu kwa milisekunde halisi ambazo msimbo umefanya kazi bila ada ya kila mwezi ya seva iliyolala."
+    }
+  ],
+  "arch-regions": [
+    {
+      "id": "arch-regions-f01",
+      "question": "Vituo vingapi vya data vinapatikana ndani ya Azure Availability Zone moja?",
+      "answer": "Availability Zone moja inajumuisha kituo kimoja au zaidi vya data vyenye umeme, mfumo wa kupoeza, na mtandao huru ndani ya eneo la Azure, vikiwa vimetengana kimwili na kanda nyingine."
+    },
+    {
+      "id": "arch-regions-f02",
+      "question": "Ni nini madhumuni makuu ya Azure Region Pair?",
+      "answer": "Region Pair inaunganisha maeneo mawili ya Azure yaliyotengana angalau maili 300. Azure inaratibu masasisho ya mifumo ili eneo moja tu lirasishwe kwa wakati mmoja, kuhakikisha huduma hazizimi zote wakati wa dharura."
+    },
+    {
+      "id": "arch-regions-f03",
+      "question": "Je, ninaweza kuchagua eneo la Azure ninapotaka kuweka programu zangu?",
+      "answer": "Ndiyo. Unachagua eneo kulingana na sheria za utunzaji wa data nchini mwako, ukaribu wa mtandao kwa wateja wako ili kupunguza kuchelewa kwa mawasiliano, na upatikanaji wa huduma maalum."
+    },
+    {
+      "id": "arch-regions-f04",
+      "question": "Je, huduma zote za Azure zinasaidia Availability Zones katika kila eneo?",
+      "answer": "Hapana. Ingawa Microsoft inaendelea kupanua uwezo huu kote duniani, baadhi ya vituo vidogo vya data havina Availability Zones. Ni vizuri kukagua nyaraka za Azure wakati wa usanifu."
+    }
+  ],
+  "arch-org": [
+    {
+      "id": "arch-org-f01",
+      "question": "Je, rasilimali moja ya Azure inaweza kuwepo ndani ya Resource Groups mbili kwa wakati mmoja?",
+      "answer": "Hapana. Kila rasilimali ya Azure lazima iwe ndani ya Resource Group moja tu. Hata hivyo, unaweza kuhamisha rasilimali kutoka kundi moja kwenda jingine ikihitajika."
+    },
+    {
+      "id": "arch-org-f02",
+      "question": "Je, Resource Group moja inaweza kuwa na rasilimali zilizopo katika maeneo tofauti ya kijiografia?",
+      "answer": "Ndiyo! Resource Group ni chombo cha kimantiki cha usimamizi. Kwa mfano, kundi moja linaweza kuwa na VM nchini Afrika Kusini na hifadhidata ya SQL barani Ulaya."
+    },
+    {
+      "id": "arch-org-f03",
+      "question": "Nini kitatokea kwa rasilimali zilizomo ndani ya Resource Group iwapo kundi hilo litafutwa?",
+      "answer": "Ukifuta Resource Group, rasilimali zote zilizomo ndani yake zitafutwa kabisa. Hii inarahisisha kufuta mazingira ya majaribio, lakini inahitaji umakini mkubwa kwenye mifumo ya kazi."
+    },
+    {
+      "id": "arch-org-f04",
+      "question": "Management Groups zinasaidiaje kusimamia subscriptions nyingi kwa mashirika makubwa?",
+      "answer": "Management Groups zinaruhusu kuweka subscriptions nyingi chini ya mti mmoja wa utawala. Sheria zozote za Azure Policy au RBAC zilizowekwa juu zinarithiwa na subscriptions zote zilizo chini."
+    }
+  ],
+  "arch-compute": [
+    {
+      "id": "arch-compute-f01",
+      "question": "Ni ipi tofauti kati ya Azure Container Instances (ACI) na Azure Kubernetes Service (AKS)?",
+      "answer": "ACI ni njia rahisi na ya haraka ya kuendesha kontena moja bila kusimamia seva wala mfumo wa kuratibu. AKS ni jukwaa kubwa la kusimamia makundi mengi ya makontena yenye mawasiliano magumu na upanuzi wa kiotomatiki."
+    },
+    {
+      "id": "arch-compute-f02",
+      "question": "Virtual Machine Scale Sets (VMSS) zinashughulikiaje ongezeko la watumiaji wa tovuti?",
+      "answer": "VMSS huunda na kuongeza idadi ya seva pepe zinazofanana kiotomatiki nyuma ya kigawa-mzigo (load balancer) pale matumizi ya CPU yanapozidi kiwango ulichopanga, na kuzipunguza wateja wakipungua."
+    },
+    {
+      "id": "arch-compute-f03",
+      "question": "Je, ninaweza kuendesha mashine pepe za Windows na Linux kwenye Azure?",
+      "answer": "Ndiyo. Azure inasaidia mifumo mingi endeshi ikiwa ni pamoja na Windows Server, Ubuntu, Red Hat, Debian, SUSE, na mifumo mingine mingi ya Linux ya biashara."
+    },
+    {
+      "id": "arch-compute-f04",
+      "question": "Ni tatizo gani la kibiashara linalotatuliwa na Azure Virtual Desktop (AVD)?",
+      "answer": "AVD hutoa kompyuta pepe ya Windows kwa wafanyakazi walioko nyumbani kupitia mtandao, ikiwawezesha kufanya kazi kutoka kifaa chochote huku data ya kampuni ikibaki salama kwenye cloud ya Azure."
+    }
+  ],
+  "arch-network": [
+    {
+      "id": "arch-network-f01",
+      "question": "Je, VNet Peering inapitisha data kwenye mtandao wa umma wa intaneti?",
+      "answer": "Hapana. VNet Peering inapitisha mawasiliano yote kupitia mtandao wa ndani wa faragha wa kimataifa wa Microsoft wenye kasi kubwa sana bila kugusa intaneti ya umma."
+    },
+    {
+      "id": "arch-network-f02",
+      "question": "Ni lini shirika linapaswa kuchagua ExpressRoute badala ya VPN ya kawaida?",
+      "answer": "Chagua ExpressRoute pale shirika lako linapohitaji muunganisho wa kasi kubwa sana (hadi 100 Gbps), wenye uhakika wa kutochelewa kwa mawasiliano, na unaopita kando ya mtandao wa umma wa intaneti."
+    },
+    {
+      "id": "arch-network-f03",
+      "question": "Nini madhumuni ya Azure Network Security Group (NSG)?",
+      "answer": "NSG inafanya kazi kama kizuizi cha usalama (firewall) kinachochuja mawasiliano yanayoingia na kutoka kwenye mitandao ya Azure kulingana na nambari za bandari (ports), anwani za IP, na itifaki."
+    },
+    {
+      "id": "arch-network-f04",
+      "question": "Private Endpoint inaboreshaje usalama wa Azure SQL Database?",
+      "answer": "Private Endpoint inapa hifadhidata ya SQL anwani ya IP ya ndani kutoka kwa mtandao wako wa VNet, ikiruhusu mifumo yako kuiunganisha bila kufichua anwani ya umma kwenye intaneti."
+    }
+  ],
+  "arch-storage": [
+    {
+      "id": "arch-storage-f01",
+      "question": "Madaraja manne ya ufikiaji ya Azure Blob Storage yanatofautianaje?",
+      "answer": "Hot ni ya data zinazotumiwa mara kwa mara. Cool ni ya data zinazotumiwa mara chache (angalau siku 30). Cold ni ya data zinazoguswa nadra sana (angalau siku 90). Archive ni ya data za zamani zilizohifadhiwa muda mrefu (angalau siku 180) yenye bei nafuu sana lakini inachukua masaa kuamka."
+    },
+    {
+      "id": "arch-storage-f02",
+      "question": "Kuna tofauti gani kati ya Locally Redundant Storage (LRS) na Zone-Redundant Storage (ZRS)?",
+      "answer": "LRS inanukuu data yako mara tatu ndani ya kituo kimoja cha data. ZRS inanukuu data yako katika vituo vitatu tofauti vya Availability Zones ndani ya eneo hilo, ikilinda hata jengo moja likipata hitilafu."
+    },
+    {
+      "id": "arch-storage-f03",
+      "question": "Je, ninaweza kufungua folda ya Azure Files kutoka kwenye kompyuta ya ofisini?",
+      "answer": "Ndiyo. Azure Files inatumia itifaki ya kawaida ya SMB kupitia port 445, ikiruhusu kompyuta za ofisini za Windows na Mac kushiriki folda moja na seva za Azure bila shida."
+    },
+    {
+      "id": "arch-storage-f04",
+      "question": "Geo-Redundant Storage (GRS) inasaidiaje wakati wa majanga makubwa ya kikanda?",
+      "answer": "GRS inanukuu data yako mara tatu katika eneo la kwanza, kisha inatuma nakala nyingine tatu kwa eneo la pili lililo umbali wa mamia ya maili, ikihakikisha data haipotei hata eneo zima likiharibiwa."
+    }
+  ],
+  "arch-identity": [
+    {
+      "id": "arch-identity-f01",
+      "question": "Ni ipi tofauti ya msingi kati ya authentication na authorization?",
+      "answer": "Authentication (AuthN) inathibitisha wewe ni nani kwa kutumia nenosiri au alama za vidole. Authorization (AuthZ) inakagua kile unachoruhusiwa kufanya na rasilimali unazoweza kuzifikia."
+    },
+    {
+      "id": "arch-identity-f02",
+      "question": "Nguzo tatu kuu za mfumo wa usalama wa Zero Trust ni zipi?",
+      "answer": "1. Thibitisha waziwazi kila wakati (verify explicitly). 2. Tumia ruhusa ndogo kabisa za lazima (least privilege). 3. Fikiria kuwa mfumo tayari umeshambuliwa (assume breach) na linda kila sehemu."
+    },
+    {
+      "id": "arch-identity-f03",
+      "question": "Conditional Access inalindaje mifumo ya biashara dhidi ya watu wasioidhinishwa?",
+      "answer": "Conditional Access inatathmini mazingira ya kuingia (kama vile nchi unayotoka, usalama wa kompyuta unayotumia, na kiwango cha hatari) na kuchukua hatua kama vile kudai uthibitisho wa simu au kuzuia kabisa."
+    },
+    {
+      "id": "arch-identity-f04",
+      "question": "Ni mambo gani matatu yanayotumika katika Multi-Factor Authentication (MFA)?",
+      "answer": "MFA inahitaji uthibitisho kutoka kwa makundi mawili tofauti: 1. Kitu unachojua (nenosiri au PIN), 2. Kitu ulicho nacho (simu au kifaa cha usalama), na 3. Kitu ulicho nacho mwilini (alama ya kidole au sura)."
+    }
+  ],
+  "gov-cost": [
+    {
+      "id": "gov-cost-f01",
+      "question": "Ni ipi tofauti kati ya Azure Pricing Calculator na TCO Calculator?",
+      "answer": "Pricing Calculator inakadiria gharama za kila mwezi unazoweza kutumia kwenye Azure kabla ya kuunda rasilimali. TCO Calculator inalinganisha gharama zote za kuwa na kituo cha data ofisini dhidi ya akiba unayopata kwa kuhamia Azure."
+    },
+    {
+      "id": "gov-cost-f02",
+      "question": "Je, lebo za Resource Tags zinarithiwa moja kwa moja na rasilimali za ndani?",
+      "answer": "Hapana. Lebo zilizowekwa kwenye Resource Group hazishuki zenyewe kwa rasilimali zilizo ndani yake. Mashirika hutumia Azure Policy kuhakikisha lebo hizo zinarithiwa."
+    },
+    {
+      "id": "gov-cost-f03",
+      "question": "Je, kuingiza data kwenye vituo vya data vya Azure kunatozwa ada yoyote?",
+      "answer": "Hapana. Kuingiza data (ingress) kwenye Azure kutoka ofisini au intaneti ni bure kabisa. Kutoa data nje ya vituo vya data vya Azure kwenda kwenye mtandao (egress) ndiko kunakotozwa ada kulingana na kiasi cha data."
+    },
+    {
+      "id": "gov-cost-f04",
+      "question": "Shirika linawezaje kutumia Azure Reservations kuokoa pesa?",
+      "answer": "Azure Reservations inaruhusu makampuni kuahidi kutumia seva maalum kwa mkataba wa mwaka mmoja au mitatu ili kupata punguzo kubwa la bei (hadi asilimia 72) ukilinganisha na bei ya kawaida ya kila saa."
+    }
+  ],
+  "gov-governance": [
+    {
+      "id": "gov-governance-f01",
+      "question": "Nini kitatokea iwapo mtumiaji mwenye cheo cha Owner atajaribu kufuta rasilimali yenye kufuli ya CanNotDelete?",
+      "answer": "Ufutaji utashindikana. Kufuli za Resource Locks zina nguvu kuliko ruhusa zote za majukumu (RBAC). Hata Owner hawezi kuifuta rasilimali hiyo hadi kwanza msimamizi aondoe kufuli hiyo rasmi."
+    },
+    {
+      "id": "gov-governance-f02",
+      "question": "Azure Policy inatofautianaje na Role-Based Access Control (RBAC)?",
+      "answer": "RBAC inadhibiti NANI anayeruhusiwa kufanya kazi kwenye mfumo (ikilenga vitambulisho vya watumiaji). Azure Policy inadhibiti NINI kinaruhusiwa kufanyika kwenye rasilimali (ikilenga sheria za mipangilio na maeneo yanayoruhusiwa)."
+    },
+    {
+      "id": "gov-governance-f03",
+      "question": "Ni nini umuhimu wa Microsoft Purview katika utawala wa data?",
+      "answer": "Microsoft Purview inatoa usimamizi wa data katika mifumo yote, ikitambua data kiotomatiki, kuweka viwango vya ulinzi wa taarifa nyeti, na kufuatilia asili ya data (data lineage)."
+    },
+    {
+      "id": "gov-governance-f04",
+      "question": "Wakuu wa usalama wanaweza kupakua wapi ripoti rasmi za ukaguzi wa ISO na SOC za Azure?",
+      "answer": "Wanaweza kupata na kupakua ripoti zote rasmi za ukaguzi wa kimataifa, vyeti vya ISO, ripoti za SOC, na nyaraka za kisheria moja kwa moja kutoka kwenye tovuti ya Service Trust Portal."
+    }
+  ],
+  "gov-tools": [
+    {
+      "id": "gov-tools-f01",
+      "question": "Azure Cloud Shell ni nini na ni programu gani ninahitaji kusakinisha kwenye kompyuta yangu?",
+      "answer": "Azure Cloud Shell ni kituo cha amri kinachopatikana mtandaoni kwenye kivinjari cha wavuti. Huna haja ya kusakinisha programu yoyote kwenye kompyuta yako; inafanya kazi kwenye kivinjari ikiwa na zana zote kama Azure CLI na PowerShell."
+    },
+    {
+      "id": "gov-tools-f02",
+      "question": "Ni ipi faida kuu ya Azure Bicep ukilinganisha na JSON ARM templates za zamani?",
+      "answer": "Azure Bicep ina msimbo mfupi, safi na rahisi kusoma, na inasimamia utegemezi wa rasilimali kiotomatiki, ikifanya uandishi wa Infrastructure as Code kuwa rahisi zaidi kuliko mafaili marefu ya JSON."
+    },
+    {
+      "id": "gov-tools-f03",
+      "question": "Azure Arc inafanya nini kwa ajili ya seva zilizopo ofisini kwetu?",
+      "answer": "Azure Arc inaunganisha seva za ofisini na makundi ya Kubernetes na mfumo mkuu wa Azure, ikikuruhusu kuzisimamia, kuzifuatilia, na kuweka sheria za Azure Policy kutoka kwenye ukurasa mmoja."
+    },
+    {
+      "id": "gov-tools-f04",
+      "question": "Ni ipi tofauti kati ya zana za kiutendaji za imperative na declarative?",
+      "answer": "Zana za imperative (kama CLI au PowerShell) zinaeleza HATUA kwa hatua jinsi ya kutengeneza kitu. Zana za declarative (kama ARM au Bicep) zinaeleza MATOKEO ya mwisho unayotaka yawepo bila kuandika hatua za ndani."
+    }
+  ],
+  "gov-monitor": [
+    {
+      "id": "gov-monitor-f01",
+      "question": "Nguzo tano za mapendekezo zinazochambuliwa na Azure Advisor ni zipi?",
+      "answer": "Azure Advisor inakagua rasilimali zako katika nguzo tano: 1. Gharama (Cost - kupunguza matumizi), 2. Usalama (Security), 3. Uimara (Reliability), 4. Utendaji (Performance), na 5. Ufanisi wa Uendeshaji (Operational Excellence)."
+    },
+    {
+      "id": "gov-monitor-f02",
+      "question": "Azure Service Health inatofautianaje na ukurasa wa umma wa Azure Status?",
+      "answer": "Ukurasa wa umma wa Azure Status unaonyesha hitilafu za jumla za dunia nzima. Azure Service Health inakupa dashibodi maalum inayoonyesha hitilafu, matengenezo, na afya ya huduma na maeneo unayoyatumia kwenye akaunti yako tu."
+    },
+    {
+      "id": "gov-monitor-f03",
+      "question": "Lugha gani ya utafutaji inayotumika kuchambua kumbukumbu katika Azure Log Analytics?",
+      "answer": "Log Analytics inatumia Kusto Query Language (KQL), lugha yenye nguvu kubwa na kasi ya ajabu iliyoundwa mahususi kutafuta na kuchambua mamilioni ya rekodi za kumbukumbu za mifumo."
+    },
+    {
+      "id": "gov-monitor-f04",
+      "question": "Application Insights inakusanya taarifa gani kutoka kwenye tovuti za watumiaji?",
+      "answer": "Application Insights inakusanya taarifa za utendaji wa tovuti zikiwemo idadi ya maombi ya kurasa, kasi ya kujibu, makosa yasiyoshughulikiwa kwenye msimbo, na muda ambao wateja wanatumia kwenye kurasa tofauti."
+    }
+  ]
+}
