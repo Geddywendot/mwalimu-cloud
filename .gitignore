@@ -44,3 +44,8 @@ supabase/.temp
 # Testing and coverage
 coverage/
 .nyc_output/
+
+# Video generation artifacts
+video_assets/
+*.mp4
+docs/*.mp4

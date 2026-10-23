@@ -1,20 +1,21 @@
-import { lazy, Suspense } from 'react'
+import { Suspense } from 'react'
 import { Link, NavLink, Navigate, Route, Routes } from 'react-router-dom'
 import { Cloud } from 'lucide-react'
 import DisclaimerFooter from './components/DisclaimerFooter'
 import HonestyBadges from './components/HonestyBadges'
 import { useAuth } from './hooks/useAuth'
 import { useSettings } from './hooks/useSettings'
+import { LANGUAGES, saveSettings } from './lib/settings'
 
-const Home = lazy(() => import('./routes/Home'))
-const Onboarding = lazy(() => import('./routes/Onboarding'))
-const Topics = lazy(() => import('./routes/Topics'))
-const Explain = lazy(() => import('./routes/Explain'))
-const Quiz = lazy(() => import('./routes/Quiz'))
-const Revision = lazy(() => import('./routes/Revision'))
-const Dashboard = lazy(() => import('./routes/Dashboard'))
-const Planner = lazy(() => import('./routes/Planner'))
-const About = lazy(() => import('./routes/About'))
+import Home from './routes/Home'
+import Onboarding from './routes/Onboarding'
+import Topics from './routes/Topics'
+import Explain from './routes/Explain'
+import Quiz from './routes/Quiz'
+import Revision from './routes/Revision'
+import Dashboard from './routes/Dashboard'
+import Planner from './routes/Planner'
+import About from './routes/About'
 
 export default function App() {
   const auth = useAuth()
@@ -60,6 +61,25 @@ export default function App() {
             <NavLink to="/dashboard" className={link}>
               {t('nav.dashboard')}
             </NavLink>
+            {settings.onboarded && (
+              <label className="ml-2 flex items-center gap-2 text-sm">
+                <span className="sr-only">{t('language.label')}</span>
+                <select
+                  aria-label={t('language.label')}
+                  value={settings.language}
+                  onChange={(event) => {
+                    void saveSettings({ ...settings, language: event.currentTarget.value })
+                  }}
+                  className="rounded-md border border-ink/20 bg-white px-2 py-1.5 font-semibold text-ink"
+                >
+                  {LANGUAGES.map((language) => (
+                    <option key={language.code} value={language.code}>
+                      {language.label}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            )}
             <button className="ml-2 text-sm text-ink/75 underline hover:text-ink" onClick={auth.signOut}>
               {auth.session ? 'Sign out' : 'Exit guest'}
             </button>

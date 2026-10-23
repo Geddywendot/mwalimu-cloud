@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { useMutation } from '@tanstack/react-query'
 import QuizRunner from '../components/QuizRunner'
@@ -25,6 +25,15 @@ export default function Quiz() {
     },
     onSuccess: setRun,
   })
+
+  useEffect(() => {
+    if (params.get('autostart') === '1') {
+      const ids = topic === 'mixed'
+        ? weakestTopics(computeReadiness(loadProgress().attempts).topics, 3).map((s) => s.topicId)
+        : [topic]
+      fetchQuiz(ids, count, settings.language).then(setRun)
+    }
+  }, [params, topic, count, settings.language])
 
   if (run) return (<div className="space-y-3">{run.notice && <p className="rounded-lg bg-sun/30 p-3 text-sm" role="status">{run.notice}</p>}<QuizRunner questions={run.questions} /></div>)
 

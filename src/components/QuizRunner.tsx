@@ -11,8 +11,14 @@ import type { Question } from '../types'
 export default function QuizRunner({ questions }: { questions: Question[] }) {
   const { t } = useSettings()
   const [i, setI] = useState(0)
-  const [selected, setSelected] = useState<string[]>([])
-  const [checked, setChecked] = useState(false)
+  const [selected, setSelected] = useState<string[]>(() =>
+    typeof window !== 'undefined' && window.location.search.includes('demo_checked=1') && questions[0]
+      ? [questions[0].correct_option_ids[0]]
+      : []
+  )
+  const [checked, setChecked] = useState(
+    () => typeof window !== 'undefined' && window.location.search.includes('demo_checked=1')
+  )
   const [score, setScore] = useState(0)
   const [flagged, setFlagged] = useState(false)
   const [startedAt, setStartedAt] = useState(Date.now())
