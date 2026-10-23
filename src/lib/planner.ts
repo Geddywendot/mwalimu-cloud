@@ -1,4 +1,4 @@
-import { DOMAINS, TOPICS, topicById } from '../data/topics'
+import { DOMAINS, TOPICS } from '../data/topics'
 import type { TopicStat } from './readiness'
 
 export interface StudySession {

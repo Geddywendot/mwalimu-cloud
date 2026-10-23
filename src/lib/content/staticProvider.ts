@@ -12,7 +12,7 @@ interface TopicLevelData {
 
 const enExplanations = explanationsEn as unknown as Record<string, TopicLevelData>
 const swExplanations = ((explanationsSw as Record<string, unknown>).topics ?? explanationsSw) as unknown as Record<string, TopicLevelData>
-const allQuestions = questionsData as Question[]
+const allQuestions = questionsData as unknown as Question[]
 const enFollowups = followupsEn as Record<string, FollowupQA[]>
 const swFollowups = ((followupsSw as Record<string, unknown>).topics ?? followupsSw) as Record<string, FollowupQA[]>
 
